@@ -1,0 +1,21 @@
+Region,Country,Level,Min_Salary_USD,Avg_Salary_USD,Max_Salary_USD,Notes
+USA,United States,Junior,80000,95000,110000,Entry level roles
+USA,United States,Mid-Level,110000,130000,160000,Typical mid-level range
+USA,United States,Senior,150000,170000,220000,Senior engineers & specialists
+USA,United States,Overall Range,98000,131000,170000,25th–75th percentile
+Africa,Kenya,Junior,8000,12000,20000,Early career estimates
+Africa,Kenya,Mid-Level,12000,20000,35000,Growing tech market
+Africa,Kenya,Senior,30000,45000,60000,Top engineers & remote roles
+Africa,Kenya,Overall Range,9000,10000,40000,Market blended estimate
+Africa,South Africa,Junior,15000,20000,25000,Entry roles
+Africa,South Africa,Mid-Level,25000,40000,55000,Typical range
+Africa,South Africa,Senior,50000,70000,90000,Top percentile earners
+Africa,South Africa,Overall Range,30000,42000,75000,Converted estimates
+Africa,Nigeria,Junior,7000,10000,15000,Emerging market estimate
+Africa,Nigeria,Mid-Level,12000,18000,30000,Remote jobs increasing
+Africa,Nigeria,Senior,25000,40000,70000,High demand skills
+Africa,Nigeria,Overall Range,8000,15000,50000,Market blended estimate
+Africa,Remote Africa,Junior,15000,25000,40000,Global companies
+Africa,Remote Africa,Mid-Level,30000,50000,80000,Remote USD salaries
+Africa,Remote Africa,Senior,70000,100000,140000,Top remote engineers
+Africa,Remote Africa,Overall Range,20000,60000,120000,Global hiring trends

@@ -1,0 +1,102 @@
+[
+    {
+        "brand": "BMW",
+        "model": "3 Series",
+        "year": 2023,
+        "engine": "2.0L Turbo",
+        "horsepower": 255,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 45000
+    },
+    {
+        "brand": "BMW",
+        "model": "X5",
+        "year": 2024,
+        "engine": "3.0L Turbo",
+        "horsepower": 375,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 65000
+    },
+    {
+        "brand": "Mercedes-Benz",
+        "model": "C-Class",
+        "year": 2023,
+        "engine": "2.0L Turbo",
+        "horsepower": 255,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 48000
+    },
+    {
+        "brand": "Mercedes-Benz",
+        "model": "E-Class",
+        "year": 2024,
+        "engine": "2.0L Turbo Hybrid",
+        "horsepower": 300,
+        "transmission": "Automatic",
+        "fuel_type": "Hybrid",
+        "price_usd": 62000
+    },
+    {
+        "brand": "Audi",
+        "model": "A4",
+        "year": 2023,
+        "engine": "2.0L Turbo",
+        "horsepower": 261,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 44000
+    },
+    {
+        "brand": "Audi",
+        "model": "Q7",
+        "year": 2024,
+        "engine": "3.0L Turbo",
+        "horsepower": 335,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 70000
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Golf",
+        "year": 2023,
+        "engine": "1.4L Turbo",
+        "horsepower": 147,
+        "transmission": "Manual/Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 28000
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Passat",
+        "year": 2023,
+        "engine": "2.0L Turbo",
+        "horsepower": 174,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 32000
+    },
+    {
+        "brand": "Porsche",
+        "model": "911 Carrera",
+        "year": 2024,
+        "engine": "3.0L Twin Turbo",
+        "horsepower": 379,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 115000
+    },
+    {
+        "brand": "Porsche",
+        "model": "Cayenne",
+        "year": 2024,
+        "engine": "3.0L Turbo",
+        "horsepower": 348,
+        "transmission": "Automatic",
+        "fuel_type": "Petrol",
+        "price_usd": 85000
+    }
+]
