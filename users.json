@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Brian Mwangi",
+    "email": "brian.mwangi@example.com",
+    "city": "Nairobi",
+    "phone": "+254712345001"
+  },
+  {
+    "id": 2,
+    "name": "Faith Wanjiku",
+    "email": "faith.wanjiku@example.com",
+    "city": "Nakuru",
+    "phone": "+254712345002"
+  },
+  {
+    "id": 3,
+    "name": "Kevin Otieno",
+    "email": "kevin.otieno@example.com",
+    "city": "Kisumu",
+    "phone": "+254712345003"
+  },
+  {
+    "id": 4,
+    "name": "Mercy Achieng",
+    "email": "mercy.achieng@example.com",
+    "city": "Kisii",
+    "phone": "+254712345004"
+  },
+  {
+    "id": 5,
+    "name": "James Kiptoo",
+    "email": "james.kiptoo@example.com",
+    "city": "Eldoret",
+    "phone": "+254712345005"
+  },
+  {
+    "id": 6,
+    "name": "Esther Chebet",
+    "email": "esther.chebet@example.com",
+    "city": "Kericho",
+    "phone": "+254712345006"
+  },
+  {
+    "id": 7,
+    "name": "Samuel Mutua",
+    "email": "samuel.mutua@example.com",
+    "city": "Machakos",
+    "phone": "+254712345007"
+  },
+  {
+    "id": 8,
+    "name": "Ann Njeri",
+    "email": "ann.njeri@example.com",
+    "city": "Thika",
+    "phone": "+254712345008"
+  },
+  {
+    "id": 9,
+    "name": "Peter Wekesa",
+    "email": "peter.wekesa@example.com",
+    "city": "Bungoma",
+    "phone": "+254712345009"
+  },
+  {
+    "id": 10,
+    "name": "Lydia Atieno",
+    "email": "lydia.atieno@example.com",
+    "city": "Siaya",
+    "phone": "+254712345010"
+  },
+  {
+    "id": 11,
+    "name": "David Kimani",
+    "email": "david.kimani@example.com",
+    "city": "Nyeri",
+    "phone": "+254712345011"
+  },
+  {
+    "id": 12,
+    "name": "Grace Wambui",
+    "email": "grace.wambui@example.com",
+    "city": "Murang'a",
+    "phone": "+254712345012"
+  },
+  {
+    "id": 13,
+    "name": "Joseph Ochieng",
+    "email": "joseph.ochieng@example.com",
+    "city": "Homa Bay",
+    "phone": "+254712345013"
+  },
+  {
+    "id": 14,
+    "name": "Rose Jepchirchir",
+    "email": "rose.jepchirchir@example.com",
+    "city": "Nandi",
+    "phone": "+254712345014"
+  },
+  {
+    "id": 15,
+    "name": "Daniel Mwenda",
+    "email": "daniel.mwenda@example.com",
+    "city": "Meru",
+    "phone": "+254712345015"
+  }
+]
