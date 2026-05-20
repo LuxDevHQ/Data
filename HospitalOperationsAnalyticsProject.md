@@ -60,3 +60,19 @@ Each table should be imported separately into PostgreSQL.
 
 ```sql
 hospital_operations_db
+```
+
+
+#### **Use SQL to answer business questions from the dataset.**
+
+**Your SQL queries should help answer questions such as:**
+- Which department receives the most patients?
+- Which counties have the highest number of patients?
+- What is the monthly trend of appointments?
+- Which doctors have the highest number of completed appointments?
+- What is the average hospital bill per patient?
+- What percentage of bills are unpaid or partially paid?
+- What is the average length of hospital stay?
+- Which lab tests are most commonly requested?
+- Which payment method is used most often?
+-- Which service type generates the highest revenue?
