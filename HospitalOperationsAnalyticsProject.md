@@ -1,8 +1,5 @@
 ### **Hospital Operations Analytics Project Instructions**
 
-### **Project Title**
-Hospital Operations Analytics Using SQL and Power BI
-
 ### **Project Overview**
 In this project, you will work with a hospital operations dataset containing several related tables. The goal is to upload the dataset into a PostgreSQL database using DBeaver, write SQL queries to explore and analyze the data, and later connect the database to Power BI for dashboard development.
 
