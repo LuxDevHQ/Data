@@ -74,4 +74,109 @@ hospital_operations_db
 - What is the average length of hospital stay?
 - Which lab tests are most commonly requested?
 - Which payment method is used most often?
--- Which service type generates the highest revenue?
+- Which service type generates the highest revenue?
+
+--- 
+
+**Power BI Questions for Hospital Operations Analytics Project**
+
+1. Which county has the highest number of patients?
+
+2. Which gender has the highest number of hospital visits?
+
+3. What is the total number of patients registered in the hospital?
+
+4. What is the total number of appointments recorded?
+
+5. What is the total number of admissions recorded?
+
+6. Which department has the highest number of admissions?
+
+7. Which department has the lowest number of admissions?
+
+8. What is the monthly trend of appointments?
+
+9. Which month recorded the highest number of appointments?
+
+10. Which appointment status appears most frequently?
+
+11. What percentage of appointments were completed?
+
+12. What percentage of appointments were cancelled?
+
+13. Which doctors handled the highest number of appointments?
+
+14. Which doctors handled the lowest number of appointments?
+
+15. Which doctor has the highest number of completed appointments?
+
+16. Which specialization appears most frequently among doctors?
+
+17. Which lab test was requested the most?
+
+18. Which lab test was requested the least?
+
+19. What percentage of lab test results were normal, abnormal, or pending?
+
+20. Which doctors requested the highest number of lab tests?
+
+21. Which drug was prescribed the most?
+
+22. Which doctor issued the highest number of prescriptions?
+
+23. What is the total prescription cost?
+
+24. What is the average prescription cost per patient?
+
+25. Which department has the highest number of recovered patients?
+
+26. Which department has the highest number of referred patients?
+
+27. What is the average length of hospital stay?
+
+28. Which admission type is most common: Emergency, Referral, or Routine?
+
+29. What percentage of patients were admitted through emergency cases?
+
+30. What is the total amount charged by the hospital?
+
+31. What is the total amount paid by patients?
+
+32. What is the total outstanding balance?
+
+33. What is the payment collection rate?
+
+34. Which payment method is used most frequently?
+
+35. Which payment method generated the highest amount paid?
+
+36. Which service type generated the highest revenue?
+
+37. Which service type generated the lowest revenue?
+
+38. What percentage of bills are fully paid, partially paid, or pending?
+
+39. Which patients have the highest outstanding balances?
+
+40. Which counties generate the highest hospital revenue?
+
+41. How does revenue change month by month?
+
+42. Which insurance provider covers the highest number of patients?
+
+43. What percentage of patients have active insurance?
+
+44. How many insurance policies are expired?
+
+45. Which county has the highest number of insured patients?
+
+46. What is the relationship between insurance status and payment status?
+
+47. Which department has the highest bed capacity?
+
+48. Which departments appear to be under the highest pressure based on admissions?
+
+49. Which age group has the highest number of patients?
+
+50. What recommendations can you give hospital management based on the dashboard insights?
+  
