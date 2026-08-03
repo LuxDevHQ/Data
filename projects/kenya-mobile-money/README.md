@@ -156,9 +156,6 @@ cumulative sums, window `SUM() OVER (ORDER BY ...)`, Pareto analysis.)*
 
 ---
 
-## How the Data Was Generated
+## Data provenance
 
-The dataset is produced by
-[`scripts/generate_kenya_mobile_money.py`](./scripts/generate_kenya_mobile_money.py),
-seeded (`random.seed(42)`) for reproducibility. Re-run it to regenerate an
-identical file, or change the seed / `N_ROWS` to produce a different sample.
+The CSV is a synthetic practice dataset. The repository does not currently include the generator, so treat the committed CSV as the reproducible source for this exercise and keep it unchanged.
