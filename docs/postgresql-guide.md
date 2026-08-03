@@ -10,12 +10,12 @@ This guide helps you:
 
 ## 1) Datasets in this repository
 
-- `Global_Superstore2.csv`
-- `data_engineer_salaries.csv`
-- `users.json`
-- `german_cars_dataset.json`
-- `excel_sales_project.xlsx` (sheet: `Sales Data`)
-- `supermarket_transactions.csv.xlsx` (sheet: `supermarket_transactions`)
+- `datasets/csv/Global_Superstore2.csv`
+- `datasets/csv/data_engineer_salaries.csv`
+- `datasets/json/users.json`
+- `datasets/json/german_cars_dataset.json`
+- `datasets/excel/excel_sales_project.xlsx` (sheet: `Sales Data`)
+- `datasets/excel/supermarket_transactions.csv.xlsx` (sheet: `supermarket_transactions`)
 
 ---
 
@@ -34,7 +34,7 @@ CREATE SCHEMA IF NOT EXISTS analytics;
 
 ## 3) Table creation SQL (DDL)
 
-## 3.1 Global Superstore (`Global_Superstore2.csv`)
+## 3.1 Global Superstore (`datasets/csv/Global_Superstore2.csv`)
 
 ```sql
 CREATE TABLE IF NOT EXISTS raw.global_superstore (
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS raw.global_superstore (
 );
 ```
 
-## 3.2 Data Engineer Salaries (`data_engineer_salaries.csv`)
+## 3.2 Data Engineer Salaries (`datasets/csv/data_engineer_salaries.csv`)
 
 ```sql
 CREATE TABLE IF NOT EXISTS raw.data_engineer_salaries (
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS raw.data_engineer_salaries (
 );
 ```
 
-## 3.3 Users (`users.json`)
+## 3.3 Users (`datasets/json/users.json`)
 
 ```sql
 CREATE TABLE IF NOT EXISTS raw.users (
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS raw.users (
 );
 ```
 
-## 3.4 German Cars (`german_cars_dataset.json`)
+## 3.4 German Cars (`datasets/json/german_cars_dataset.json`)
 
 ```sql
 CREATE TABLE IF NOT EXISTS raw.german_cars (
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS raw.german_cars (
 );
 ```
 
-## 3.5 Excel Sales Project (`excel_sales_project.xlsx`, sheet `Sales Data`)
+## 3.5 Excel Sales Project (`datasets/excel/excel_sales_project.xlsx`, sheet `Sales Data`)
 
 ```sql
 CREATE TABLE IF NOT EXISTS raw.excel_sales_data (
@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS raw.excel_sales_data (
 );
 ```
 
-## 3.6 Supermarket Transactions (`supermarket_transactions.csv.xlsx`, sheet `supermarket_transactions`)
+## 3.6 Supermarket Transactions (`datasets/excel/supermarket_transactions.csv.xlsx`, sheet `supermarket_transactions`)
 
 ```sql
 CREATE TABLE IF NOT EXISTS raw.supermarket_transactions (
@@ -168,11 +168,11 @@ CREATE TABLE IF NOT EXISTS raw.supermarket_transactions (
 ```sql
 -- Adjust absolute paths for your machine/container.
 COPY raw.global_superstore
-FROM '/workspace/Data/Global_Superstore2.csv'
+FROM '/workspace/Data/datasets/csv/Global_Superstore2.csv'
 WITH (FORMAT csv, HEADER true);
 
 COPY raw.data_engineer_salaries
-FROM '/workspace/Data/data_engineer_salaries.csv'
+FROM '/workspace/Data/datasets/csv/data_engineer_salaries.csv'
 WITH (FORMAT csv, HEADER true);
 ```
 
@@ -181,7 +181,7 @@ WITH (FORMAT csv, HEADER true);
 ```sql
 -- users.json
 WITH src AS (
-    SELECT pg_read_file('/workspace/Data/users.json')::jsonb AS j
+    SELECT pg_read_file('/workspace/Data/datasets/json/users.json')::jsonb AS j
 )
 INSERT INTO raw.users (id, name, email, city, phone)
 SELECT *
@@ -195,7 +195,7 @@ FROM jsonb_to_recordset((SELECT j FROM src)) AS x(
 
 -- german_cars_dataset.json
 WITH src AS (
-    SELECT pg_read_file('/workspace/Data/german_cars_dataset.json')::jsonb AS j
+    SELECT pg_read_file('/workspace/Data/datasets/json/german_cars_dataset.json')::jsonb AS j
 )
 INSERT INTO raw.german_cars (brand, model, year, engine, horsepower, transmission, fuel_type, price_usd)
 SELECT *
@@ -344,4 +344,4 @@ ORDER BY delta_vs_global DESC;
 
 ---
 
-If you want, next step can be a **`schema.sql` + `load.sql` + `practice.sql` split** so you can run everything in one command with `psql -f`.
+Return to the [repository study guide](../README.md) to choose a guided project or another dataset.

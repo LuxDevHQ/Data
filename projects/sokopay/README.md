@@ -1,6 +1,6 @@
 # SokoPay Kenya — Data Analytics Project Brief
 
-**Dataset:** `kenya_transactions.csv` · 15,070 rows · 25 columns · 1 Jan 2025 → 30 Jun 2026
+**Dataset:** [`kenya_transactions.csv`](./kenya_transactions.csv) · 15,070 rows · 25 columns · 1 Jan 2025 → 30 Jun 2026
 
 You are an analyst at **SokoPay**, a Kenyan digital payments and marketplace platform
 operating across 14 counties. Customers pay merchants through the mobile app, USSD, web,
