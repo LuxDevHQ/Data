@@ -1,4 +1,4 @@
-# Kenya Mobile Money - Python and SQL Practice Project
+# Kenya Mobile Money - Python and SQL Practice Project.
 
 ## Project Overview
 
