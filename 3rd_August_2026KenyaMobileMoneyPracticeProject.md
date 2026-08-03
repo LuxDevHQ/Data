@@ -12,7 +12,7 @@ that the questions below require *advanced* techniques: window functions,
 cohort/retention analysis, time-series resampling, RFM segmentation, and more.
 
 **Dataset:** [`kenya_mobile_money_transactions.csv`](./kenya_mobile_money_transactions.csv)
-— 6,000 transactions across 800 customers, spanning **1 Jan 2024 → 31 Dec 2024**.
+- 6,000 transactions across 800 customers, spanning **1 Jan 2024 → 31 Dec 2024**.
 
 ---
 
