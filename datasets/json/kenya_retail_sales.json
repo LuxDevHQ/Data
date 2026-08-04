@@ -1,0 +1,4318 @@
+{
+  "dataset_name": "Kenya Retail Sales",
+  "description": "Nested retail sales dataset for Python JSON processing, relational database design, SQL analysis, and Power BI visualization.",
+  "generated_at": "2026-08-04",
+  "currency": "KES",
+  "orders": [
+    {
+      "order_id": "O001",
+      "order_date": "2026-02-02",
+      "customer": {
+        "customer_id": "C011",
+        "name": "Karen Atieno",
+        "gender": "Female",
+        "age": 29,
+        "city": "Kisumu",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY001",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 125025.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI001-1",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 66000.0
+        },
+        {
+          "order_item_id": "OI001-2",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 39525.0
+        },
+        {
+          "order_item_id": "OI001-3",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 19500.0
+        }
+      ],
+      "subtotal": 125025.0,
+      "order_total": 125025.0
+    },
+    {
+      "order_id": "O002",
+      "order_date": "2026-01-28",
+      "customer": {
+        "customer_id": "C001",
+        "name": "Alice Wanjiku",
+        "gender": "Female",
+        "age": 27,
+        "city": "Nairobi",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY002",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 239250.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI002-1",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 22500.0
+        },
+        {
+          "order_item_id": "OI002-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 216750.0
+        }
+      ],
+      "subtotal": 239250.0,
+      "order_total": 239250.0
+    },
+    {
+      "order_id": "O003",
+      "order_date": "2026-04-29",
+      "customer": {
+        "customer_id": "C004",
+        "name": "David Mwangi",
+        "gender": "Male",
+        "age": 39,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Website",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY003",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 240500.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI003-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 170000.0
+        },
+        {
+          "order_item_id": "OI003-2",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 6500.0
+        },
+        {
+          "order_item_id": "OI003-3",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 64000.0
+        }
+      ],
+      "subtotal": 240500.0,
+      "order_total": 240500.0
+    },
+    {
+      "order_id": "O004",
+      "order_date": "2026-04-03",
+      "customer": {
+        "customer_id": "C006",
+        "name": "Felix Kiptoo",
+        "gender": "Male",
+        "age": 28,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY004",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 210860.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI004-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 170000.0
+        },
+        {
+          "order_item_id": "OI004-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 36000.0
+        },
+        {
+          "order_item_id": "OI004-3",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 4860.0
+        }
+      ],
+      "subtotal": 210860.0,
+      "order_total": 210860.0
+    },
+    {
+      "order_id": "O005",
+      "order_date": "2026-01-22",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 800,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY005",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 8900.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI005-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 4500.0
+        },
+        {
+          "order_item_id": "OI005-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 3600.0
+        }
+      ],
+      "subtotal": 8100.0,
+      "order_total": 8900.0
+    },
+    {
+      "order_id": "O006",
+      "order_date": "2026-04-09",
+      "customer": {
+        "customer_id": "C003",
+        "name": "Carol Njeri",
+        "gender": "Female",
+        "age": 24,
+        "city": "Nakuru",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 450,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY006",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 13545.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI006-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 11475.0
+        },
+        {
+          "order_item_id": "OI006-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 1620.0
+        }
+      ],
+      "subtotal": 13095.0,
+      "order_total": 13545.0
+    },
+    {
+      "order_id": "O007",
+      "order_date": "2026-06-17",
+      "customer": {
+        "customer_id": "C005",
+        "name": "Esther Akinyi",
+        "gender": "Female",
+        "age": 30,
+        "city": "Mombasa",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Mombasa",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY007",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 180000.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI007-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 18500.0
+        },
+        {
+          "order_item_id": "OI007-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 161500.0
+        }
+      ],
+      "subtotal": 180000.0,
+      "order_total": 180000.0
+    },
+    {
+      "order_id": "O008",
+      "order_date": "2026-07-07",
+      "customer": {
+        "customer_id": "C010",
+        "name": "John Kamau",
+        "gender": "Male",
+        "age": 33,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 2
+      },
+      "payment": {
+        "payment_id": "PAY008",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 66200.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI008-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 34200.0
+        },
+        {
+          "order_item_id": "OI008-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 32000.0
+        }
+      ],
+      "subtotal": 66200.0,
+      "order_total": 66200.0
+    },
+    {
+      "order_id": "O009",
+      "order_date": "2026-05-22",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY009",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 97980.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI009-1",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 13950.0
+        },
+        {
+          "order_item_id": "OI009-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 64000.0
+        },
+        {
+          "order_item_id": "OI009-3",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 18500.0
+        },
+        {
+          "order_item_id": "OI009-4",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 1530.0
+        }
+      ],
+      "subtotal": 97980.0,
+      "order_total": 97980.0
+    },
+    {
+      "order_id": "O010",
+      "order_date": "2026-06-06",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY010",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 88100.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI010-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 27200.0
+        },
+        {
+          "order_item_id": "OI010-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 36000.0
+        },
+        {
+          "order_item_id": "OI010-3",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 12150.0
+        },
+        {
+          "order_item_id": "OI010-4",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 12750.0
+        }
+      ],
+      "subtotal": 88100.0,
+      "order_total": 88100.0
+    },
+    {
+      "order_id": "O011",
+      "order_date": "2026-02-14",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Pending",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 300,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY011",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Pending",
+        "amount": 13800.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI011-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 13500.0
+        }
+      ],
+      "subtotal": 13500.0,
+      "order_total": 13800.0
+    },
+    {
+      "order_id": "O012",
+      "order_date": "2026-06-09",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY012",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 55800.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI012-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 49950.0
+        },
+        {
+          "order_item_id": "OI012-2",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 5850.0
+        }
+      ],
+      "subtotal": 55800.0,
+      "order_total": 55800.0
+    },
+    {
+      "order_id": "O013",
+      "order_date": "2026-04-07",
+      "customer": {
+        "customer_id": "C002",
+        "name": "Brian Otieno",
+        "gender": "Male",
+        "age": 32,
+        "city": "Kisumu",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY013",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 273700.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI013-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 255000.0
+        },
+        {
+          "order_item_id": "OI013-2",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 18700.0
+        }
+      ],
+      "subtotal": 273700.0,
+      "order_total": 273700.0
+    },
+    {
+      "order_id": "O014",
+      "order_date": "2026-07-20",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 800,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY014",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 33050.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI014-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 12000.0
+        },
+        {
+          "order_item_id": "OI014-2",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 20250.0
+        }
+      ],
+      "subtotal": 32250.0,
+      "order_total": 33050.0
+    },
+    {
+      "order_id": "O015",
+      "order_date": "2026-02-25",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 0,
+        "delivery_days": 2
+      },
+      "payment": {
+        "payment_id": "PAY015",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 292250.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI015-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 18500.0
+        },
+        {
+          "order_item_id": "OI015-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 12000.0
+        },
+        {
+          "order_item_id": "OI015-3",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 6750.0
+        },
+        {
+          "order_item_id": "OI015-4",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 255000.0
+        }
+      ],
+      "subtotal": 292250.0,
+      "order_total": 292250.0
+    },
+    {
+      "order_id": "O016",
+      "order_date": "2026-07-05",
+      "customer": {
+        "customer_id": "C002",
+        "name": "Brian Otieno",
+        "gender": "Male",
+        "age": 32,
+        "city": "Kisumu",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 0,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY016",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 258600.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI016-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 3600.0
+        },
+        {
+          "order_item_id": "OI016-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 255000.0
+        }
+      ],
+      "subtotal": 258600.0,
+      "order_total": 258600.0
+    },
+    {
+      "order_id": "O017",
+      "order_date": "2026-05-23",
+      "customer": {
+        "customer_id": "C004",
+        "name": "David Mwangi",
+        "gender": "Male",
+        "age": 39,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY017",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 120420.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI017-1",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 22000.0
+        },
+        {
+          "order_item_id": "OI017-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 34200.0
+        },
+        {
+          "order_item_id": "OI017-3",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 60800.0
+        },
+        {
+          "order_item_id": "OI017-4",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 3420.0
+        }
+      ],
+      "subtotal": 120420.0,
+      "order_total": 120420.0
+    },
+    {
+      "order_id": "O018",
+      "order_date": "2026-06-19",
+      "customer": {
+        "customer_id": "C011",
+        "name": "Karen Atieno",
+        "gender": "Female",
+        "age": 29,
+        "city": "Kisumu",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 0,
+        "delivery_days": 2
+      },
+      "payment": {
+        "payment_id": "PAY018",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 96000.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI018-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 96000.0
+        }
+      ],
+      "subtotal": 96000.0,
+      "order_total": 96000.0
+    },
+    {
+      "order_id": "O019",
+      "order_date": "2026-05-22",
+      "customer": {
+        "customer_id": "C004",
+        "name": "David Mwangi",
+        "gender": "Male",
+        "age": 39,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Pending",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY019",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Pending",
+        "amount": 67300.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI019-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 60800.0
+        },
+        {
+          "order_item_id": "OI019-2",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 6500.0
+        }
+      ],
+      "subtotal": 67300.0,
+      "order_total": 67300.0
+    },
+    {
+      "order_id": "O020",
+      "order_date": "2026-01-17",
+      "customer": {
+        "customer_id": "C002",
+        "name": "Brian Otieno",
+        "gender": "Male",
+        "age": 32,
+        "city": "Kisumu",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 800,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY020",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 2600.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI020-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 1800.0
+        }
+      ],
+      "subtotal": 1800.0,
+      "order_total": 2600.0
+    },
+    {
+      "order_id": "O021",
+      "order_date": "2026-01-20",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 2
+      },
+      "payment": {
+        "payment_id": "PAY021",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 255675.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI021-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 170000.0
+        },
+        {
+          "order_item_id": "OI021-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 54400.0
+        },
+        {
+          "order_item_id": "OI021-3",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 12150.0
+        },
+        {
+          "order_item_id": "OI021-4",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 19125.0
+        }
+      ],
+      "subtotal": 255675.0,
+      "order_total": 255675.0
+    },
+    {
+      "order_id": "O022",
+      "order_date": "2026-03-01",
+      "customer": {
+        "customer_id": "C005",
+        "name": "Esther Akinyi",
+        "gender": "Female",
+        "age": 30,
+        "city": "Mombasa",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Mombasa",
+        "delivery_fee": 800,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY022",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 19300.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI022-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 18500.0
+        }
+      ],
+      "subtotal": 18500.0,
+      "order_total": 19300.0
+    },
+    {
+      "order_id": "O023",
+      "order_date": "2026-01-19",
+      "customer": {
+        "customer_id": "C003",
+        "name": "Carol Njeri",
+        "gender": "Female",
+        "age": 24,
+        "city": "Nakuru",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 300,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY023",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 6150.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI023-1",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 5850.0
+        }
+      ],
+      "subtotal": 5850.0,
+      "order_total": 6150.0
+    },
+    {
+      "order_id": "O024",
+      "order_date": "2026-02-04",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY024",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Refunded",
+        "amount": 191000.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI024-1",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 46500.0
+        },
+        {
+          "order_item_id": "OI024-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 144500.0
+        }
+      ],
+      "subtotal": 191000.0,
+      "order_total": 191000.0
+    },
+    {
+      "order_id": "O025",
+      "order_date": "2026-03-12",
+      "customer": {
+        "customer_id": "C006",
+        "name": "Felix Kiptoo",
+        "gender": "Male",
+        "age": 28,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY025",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 96200.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI025-1",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 18700.0
+        },
+        {
+          "order_item_id": "OI025-2",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 13500.0
+        },
+        {
+          "order_item_id": "OI025-3",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 64000.0
+        }
+      ],
+      "subtotal": 96200.0,
+      "order_total": 96200.0
+    },
+    {
+      "order_id": "O026",
+      "order_date": "2026-05-29",
+      "customer": {
+        "customer_id": "C010",
+        "name": "John Kamau",
+        "gender": "Male",
+        "age": 33,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 600,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY026",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 7350.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI026-1",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 6750.0
+        }
+      ],
+      "subtotal": 6750.0,
+      "order_total": 7350.0
+    },
+    {
+      "order_id": "O027",
+      "order_date": "2026-04-09",
+      "customer": {
+        "customer_id": "C004",
+        "name": "David Mwangi",
+        "gender": "Male",
+        "age": 39,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY027",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 55125.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI027-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 36000.0
+        },
+        {
+          "order_item_id": "OI027-2",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 19125.0
+        }
+      ],
+      "subtotal": 55125.0,
+      "order_total": 55125.0
+    },
+    {
+      "order_id": "O028",
+      "order_date": "2026-03-22",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 600,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY028",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 9825.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI028-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 3825.0
+        },
+        {
+          "order_item_id": "OI028-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 5400.0
+        }
+      ],
+      "subtotal": 9225.0,
+      "order_total": 9825.0
+    },
+    {
+      "order_id": "O029",
+      "order_date": "2026-04-02",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 0,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY029",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 50700.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI029-1",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 7500.0
+        },
+        {
+          "order_item_id": "OI029-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 34200.0
+        },
+        {
+          "order_item_id": "OI029-3",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 9000.0
+        }
+      ],
+      "subtotal": 50700.0,
+      "order_total": 50700.0
+    },
+    {
+      "order_id": "O030",
+      "order_date": "2026-03-13",
+      "customer": {
+        "customer_id": "C011",
+        "name": "Karen Atieno",
+        "gender": "Female",
+        "age": 29,
+        "city": "Kisumu",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY030",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 152575.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI030-1",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 6375.0
+        },
+        {
+          "order_item_id": "OI030-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 28800.0
+        },
+        {
+          "order_item_id": "OI030-3",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 85000.0
+        },
+        {
+          "order_item_id": "OI030-4",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 32400.0
+        }
+      ],
+      "subtotal": 152575.0,
+      "order_total": 152575.0
+    },
+    {
+      "order_id": "O031",
+      "order_date": "2026-03-24",
+      "customer": {
+        "customer_id": "C001",
+        "name": "Alice Wanjiku",
+        "gender": "Female",
+        "age": 27,
+        "city": "Nairobi",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 450,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY031",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 16175.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI031-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 15725.0
+        }
+      ],
+      "subtotal": 15725.0,
+      "order_total": 16175.0
+    },
+    {
+      "order_id": "O032",
+      "order_date": "2026-04-19",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 600,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY032",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Refunded",
+        "amount": 28000.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI032-1",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 20900.0
+        },
+        {
+          "order_item_id": "OI032-2",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 6500.0
+        }
+      ],
+      "subtotal": 27400.0,
+      "order_total": 28000.0
+    },
+    {
+      "order_id": "O033",
+      "order_date": "2026-03-09",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 800,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY033",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 34510.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI033-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 1710.0
+        },
+        {
+          "order_item_id": "OI033-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 32000.0
+        }
+      ],
+      "subtotal": 33710.0,
+      "order_total": 34510.0
+    },
+    {
+      "order_id": "O034",
+      "order_date": "2026-01-11",
+      "customer": {
+        "customer_id": "C004",
+        "name": "David Mwangi",
+        "gender": "Male",
+        "age": 39,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY034",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 148210.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI034-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 37000.0
+        },
+        {
+          "order_item_id": "OI034-2",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 12150.0
+        },
+        {
+          "order_item_id": "OI034-3",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 3060.0
+        },
+        {
+          "order_item_id": "OI034-4",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 96000.0
+        }
+      ],
+      "subtotal": 148210.0,
+      "order_total": 148210.0
+    },
+    {
+      "order_id": "O035",
+      "order_date": "2026-06-02",
+      "customer": {
+        "customer_id": "C003",
+        "name": "Carol Njeri",
+        "gender": "Female",
+        "age": 24,
+        "city": "Nakuru",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 600,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY035",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 5730.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI035-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 5130.0
+        }
+      ],
+      "subtotal": 5130.0,
+      "order_total": 5730.0
+    },
+    {
+      "order_id": "O036",
+      "order_date": "2026-06-09",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY036",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Refunded",
+        "amount": 96000.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI036-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 96000.0
+        }
+      ],
+      "subtotal": 96000.0,
+      "order_total": 96000.0
+    },
+    {
+      "order_id": "O037",
+      "order_date": "2026-01-05",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY037",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 73325.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI037-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 15725.0
+        },
+        {
+          "order_item_id": "OI037-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 10,
+          "line_total": 57600.0
+        }
+      ],
+      "subtotal": 73325.0,
+      "order_total": 73325.0
+    },
+    {
+      "order_id": "O038",
+      "order_date": "2026-03-22",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY038",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Refunded",
+        "amount": 166225.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI038-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 96000.0
+        },
+        {
+          "order_item_id": "OI038-2",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 55500.0
+        },
+        {
+          "order_item_id": "OI038-3",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 14725.0
+        }
+      ],
+      "subtotal": 166225.0,
+      "order_total": 166225.0
+    },
+    {
+      "order_id": "O039",
+      "order_date": "2026-02-18",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 0,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY039",
+        "payment_method": "Card",
+        "payment_status": "Refunded",
+        "amount": 300625.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI039-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 64000.0
+        },
+        {
+          "order_item_id": "OI039-2",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 7125.0
+        },
+        {
+          "order_item_id": "OI039-3",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 229500.0
+        }
+      ],
+      "subtotal": 300625.0,
+      "order_total": 300625.0
+    },
+    {
+      "order_id": "O040",
+      "order_date": "2026-04-28",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY040",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 62475.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI040-1",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 16575.0
+        },
+        {
+          "order_item_id": "OI040-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 5400.0
+        },
+        {
+          "order_item_id": "OI040-3",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 4500.0
+        },
+        {
+          "order_item_id": "OI040-4",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 36000.0
+        }
+      ],
+      "subtotal": 62475.0,
+      "order_total": 62475.0
+    },
+    {
+      "order_id": "O041",
+      "order_date": "2026-01-11",
+      "customer": {
+        "customer_id": "C003",
+        "name": "Carol Njeri",
+        "gender": "Female",
+        "age": 24,
+        "city": "Nakuru",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 450,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY041",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 28110.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI041-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 22800.0
+        },
+        {
+          "order_item_id": "OI041-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 4860.0
+        }
+      ],
+      "subtotal": 27660.0,
+      "order_total": 28110.0
+    },
+    {
+      "order_id": "O042",
+      "order_date": "2026-04-17",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY042",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 171530.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI042-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 170000.0
+        },
+        {
+          "order_item_id": "OI042-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 1530.0
+        }
+      ],
+      "subtotal": 171530.0,
+      "order_total": 171530.0
+    },
+    {
+      "order_id": "O043",
+      "order_date": "2026-03-09",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY043",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 141400.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI043-1",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 2,
+          "discount_pct": 10,
+          "line_total": 11700.0
+        },
+        {
+          "order_item_id": "OI043-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 32400.0
+        },
+        {
+          "order_item_id": "OI043-3",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 10,
+          "line_total": 33300.0
+        },
+        {
+          "order_item_id": "OI043-4",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 64000.0
+        }
+      ],
+      "subtotal": 141400.0,
+      "order_total": 141400.0
+    },
+    {
+      "order_id": "O044",
+      "order_date": "2026-03-12",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 0,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY044",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 68450.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI044-1",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 14250.0
+        },
+        {
+          "order_item_id": "OI044-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 10200.0
+        },
+        {
+          "order_item_id": "OI044-3",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 44000.0
+        }
+      ],
+      "subtotal": 68450.0,
+      "order_total": 68450.0
+    },
+    {
+      "order_id": "O045",
+      "order_date": "2026-01-25",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY045",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 162000.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI045-1",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 66000.0
+        },
+        {
+          "order_item_id": "OI045-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 96000.0
+        }
+      ],
+      "subtotal": 162000.0,
+      "order_total": 162000.0
+    },
+    {
+      "order_id": "O046",
+      "order_date": "2026-05-23",
+      "customer": {
+        "customer_id": "C006",
+        "name": "Felix Kiptoo",
+        "gender": "Male",
+        "age": 28,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Pending",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY046",
+        "payment_method": "Card",
+        "payment_status": "Pending",
+        "amount": 304850.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI046-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 216750.0
+        },
+        {
+          "order_item_id": "OI046-2",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 19800.0
+        },
+        {
+          "order_item_id": "OI046-3",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 60800.0
+        },
+        {
+          "order_item_id": "OI046-4",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 7500.0
+        }
+      ],
+      "subtotal": 304850.0,
+      "order_total": 304850.0
+    },
+    {
+      "order_id": "O047",
+      "order_date": "2026-05-22",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY047",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Refunded",
+        "amount": 66800.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI047-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 22800.0
+        },
+        {
+          "order_item_id": "OI047-2",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 44000.0
+        }
+      ],
+      "subtotal": 66800.0,
+      "order_total": 66800.0
+    },
+    {
+      "order_id": "O048",
+      "order_date": "2026-07-28",
+      "customer": {
+        "customer_id": "C011",
+        "name": "Karen Atieno",
+        "gender": "Female",
+        "age": 29,
+        "city": "Kisumu",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Pending",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 300,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY048",
+        "payment_method": "Card",
+        "payment_status": "Pending",
+        "amount": 38875.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI048-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 32400.0
+        },
+        {
+          "order_item_id": "OI048-2",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 6175.0
+        }
+      ],
+      "subtotal": 38575.0,
+      "order_total": 38875.0
+    },
+    {
+      "order_id": "O049",
+      "order_date": "2026-05-03",
+      "customer": {
+        "customer_id": "C003",
+        "name": "Carol Njeri",
+        "gender": "Female",
+        "age": 24,
+        "city": "Nakuru",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 450,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY049",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 9450.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI049-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 9000.0
+        }
+      ],
+      "subtotal": 9000.0,
+      "order_total": 9450.0
+    },
+    {
+      "order_id": "O050",
+      "order_date": "2026-03-17",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Website",
+      "status": "Pending",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY050",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Pending",
+        "amount": 89110.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI050-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 4860.0
+        },
+        {
+          "order_item_id": "OI050-2",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 12000.0
+        },
+        {
+          "order_item_id": "OI050-3",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 72250.0
+        }
+      ],
+      "subtotal": 89110.0,
+      "order_total": 89110.0
+    },
+    {
+      "order_id": "O051",
+      "order_date": "2026-07-17",
+      "customer": {
+        "customer_id": "C001",
+        "name": "Alice Wanjiku",
+        "gender": "Female",
+        "age": 27,
+        "city": "Nairobi",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY051",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 151000.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI051-1",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 66000.0
+        },
+        {
+          "order_item_id": "OI051-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 85000.0
+        }
+      ],
+      "subtotal": 151000.0,
+      "order_total": 151000.0
+    },
+    {
+      "order_id": "O052",
+      "order_date": "2026-03-01",
+      "customer": {
+        "customer_id": "C010",
+        "name": "John Kamau",
+        "gender": "Male",
+        "age": 33,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Pending",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 800,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY052",
+        "payment_method": "M-Pesa",
+        "payment_status": "Pending",
+        "amount": 26950.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI052-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 18500.0
+        },
+        {
+          "order_item_id": "OI052-2",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 5850.0
+        },
+        {
+          "order_item_id": "OI052-3",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 1800.0
+        }
+      ],
+      "subtotal": 26150.0,
+      "order_total": 26950.0
+    },
+    {
+      "order_id": "O053",
+      "order_date": "2026-06-05",
+      "customer": {
+        "customer_id": "C002",
+        "name": "Brian Otieno",
+        "gender": "Male",
+        "age": 32,
+        "city": "Kisumu",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 300,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY053",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 12450.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI053-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 12150.0
+        }
+      ],
+      "subtotal": 12150.0,
+      "order_total": 12450.0
+    },
+    {
+      "order_id": "O054",
+      "order_date": "2026-05-21",
+      "customer": {
+        "customer_id": "C006",
+        "name": "Felix Kiptoo",
+        "gender": "Male",
+        "age": 28,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Pending",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY054",
+        "payment_method": "Card",
+        "payment_status": "Pending",
+        "amount": 53710.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI054-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 1710.0
+        },
+        {
+          "order_item_id": "OI054-2",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 15000.0
+        },
+        {
+          "order_item_id": "OI054-3",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 37000.0
+        }
+      ],
+      "subtotal": 53710.0,
+      "order_total": 53710.0
+    },
+    {
+      "order_id": "O055",
+      "order_date": "2026-02-13",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Pending",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 800,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY055",
+        "payment_method": "Card",
+        "payment_status": "Pending",
+        "amount": 29600.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI055-1",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 20250.0
+        },
+        {
+          "order_item_id": "OI055-2",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 8550.0
+        }
+      ],
+      "subtotal": 28800.0,
+      "order_total": 29600.0
+    },
+    {
+      "order_id": "O056",
+      "order_date": "2026-03-08",
+      "customer": {
+        "customer_id": "C006",
+        "name": "Felix Kiptoo",
+        "gender": "Male",
+        "age": 28,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY056",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 126100.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI056-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 32400.0
+        },
+        {
+          "order_item_id": "OI056-2",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 62700.0
+        },
+        {
+          "order_item_id": "OI056-3",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 31000.0
+        }
+      ],
+      "subtotal": 126100.0,
+      "order_total": 126100.0
+    },
+    {
+      "order_id": "O057",
+      "order_date": "2026-05-09",
+      "customer": {
+        "customer_id": "C003",
+        "name": "Carol Njeri",
+        "gender": "Female",
+        "age": 24,
+        "city": "Nakuru",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 0,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY057",
+        "payment_method": "M-Pesa",
+        "payment_status": "Paid",
+        "amount": 58725.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI057-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 11475.0
+        },
+        {
+          "order_item_id": "OI057-2",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 10,
+          "line_total": 33300.0
+        },
+        {
+          "order_item_id": "OI057-3",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 13950.0
+        }
+      ],
+      "subtotal": 58725.0,
+      "order_total": 58725.0
+    },
+    {
+      "order_id": "O058",
+      "order_date": "2026-04-19",
+      "customer": {
+        "customer_id": "C012",
+        "name": "Leonard Maina",
+        "gender": "Male",
+        "age": 44,
+        "city": "Nakuru",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Pending",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 450,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY058",
+        "payment_method": "M-Pesa",
+        "payment_status": "Pending",
+        "amount": 39950.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI058-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 24000.0
+        },
+        {
+          "order_item_id": "OI058-2",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 15500.0
+        }
+      ],
+      "subtotal": 39500.0,
+      "order_total": 39950.0
+    },
+    {
+      "order_id": "O059",
+      "order_date": "2026-06-23",
+      "customer": {
+        "customer_id": "C005",
+        "name": "Esther Akinyi",
+        "gender": "Female",
+        "age": 30,
+        "city": "Mombasa",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Mombasa",
+        "delivery_fee": 0,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY059",
+        "payment_method": "Card",
+        "payment_status": "Refunded",
+        "amount": 74350.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI059-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 20400.0
+        },
+        {
+          "order_item_id": "OI059-2",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 22500.0
+        },
+        {
+          "order_item_id": "OI059-3",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 31450.0
+        }
+      ],
+      "subtotal": 74350.0,
+      "order_total": 74350.0
+    },
+    {
+      "order_id": "O060",
+      "order_date": "2026-03-05",
+      "customer": {
+        "customer_id": "C005",
+        "name": "Esther Akinyi",
+        "gender": "Female",
+        "age": 30,
+        "city": "Mombasa",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Mombasa",
+        "delivery_fee": 0,
+        "delivery_days": 2
+      },
+      "payment": {
+        "payment_id": "PAY060",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 55350.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI060-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 49950.0
+        },
+        {
+          "order_item_id": "OI060-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 5400.0
+        }
+      ],
+      "subtotal": 55350.0,
+      "order_total": 55350.0
+    },
+    {
+      "order_id": "O061",
+      "order_date": "2026-03-16",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 450,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY061",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 28075.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI061-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 1800.0
+        },
+        {
+          "order_item_id": "OI061-2",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 22000.0
+        },
+        {
+          "order_item_id": "OI061-3",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 3825.0
+        }
+      ],
+      "subtotal": 27625.0,
+      "order_total": 28075.0
+    },
+    {
+      "order_id": "O062",
+      "order_date": "2026-03-20",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY062",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 221920.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI062-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 3420.0
+        },
+        {
+          "order_item_id": "OI062-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 170000.0
+        },
+        {
+          "order_item_id": "OI062-3",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 4500.0
+        },
+        {
+          "order_item_id": "OI062-4",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 44000.0
+        }
+      ],
+      "subtotal": 221920.0,
+      "order_total": 221920.0
+    },
+    {
+      "order_id": "O063",
+      "order_date": "2026-06-01",
+      "customer": {
+        "customer_id": "C002",
+        "name": "Brian Otieno",
+        "gender": "Male",
+        "age": 32,
+        "city": "Kisumu",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 800,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY063",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 11350.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI063-1",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 6500.0
+        },
+        {
+          "order_item_id": "OI063-2",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 4050.0
+        }
+      ],
+      "subtotal": 10550.0,
+      "order_total": 11350.0
+    },
+    {
+      "order_id": "O064",
+      "order_date": "2026-07-22",
+      "customer": {
+        "customer_id": "C004",
+        "name": "David Mwangi",
+        "gender": "Male",
+        "age": 39,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Website",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY064",
+        "payment_method": "M-Pesa",
+        "payment_status": "Refunded",
+        "amount": 157200.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI064-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 34200.0
+        },
+        {
+          "order_item_id": "OI064-2",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 2,
+          "discount_pct": 10,
+          "line_total": 27900.0
+        },
+        {
+          "order_item_id": "OI064-3",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 13500.0
+        },
+        {
+          "order_item_id": "OI064-4",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 81600.0
+        }
+      ],
+      "subtotal": 157200.0,
+      "order_total": 157200.0
+    },
+    {
+      "order_id": "O065",
+      "order_date": "2026-02-28",
+      "customer": {
+        "customer_id": "C011",
+        "name": "Karen Atieno",
+        "gender": "Female",
+        "age": 29,
+        "city": "Kisumu",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Website",
+      "status": "Completed",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 300,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY065",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 6800.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI065-1",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 6500.0
+        }
+      ],
+      "subtotal": 6500.0,
+      "order_total": 6800.0
+    },
+    {
+      "order_id": "O066",
+      "order_date": "2026-06-30",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 0,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY066",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Refunded",
+        "amount": 280950.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI066-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 13500.0
+        },
+        {
+          "order_item_id": "OI066-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 242250.0
+        },
+        {
+          "order_item_id": "OI066-3",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 18700.0
+        },
+        {
+          "order_item_id": "OI066-4",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 6500.0
+        }
+      ],
+      "subtotal": 280950.0,
+      "order_total": 280950.0
+    },
+    {
+      "order_id": "O067",
+      "order_date": "2026-04-23",
+      "customer": {
+        "customer_id": "C004",
+        "name": "David Mwangi",
+        "gender": "Male",
+        "age": 39,
+        "city": "Nairobi",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 600,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY067",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 11600.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI067-1",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 6500.0
+        },
+        {
+          "order_item_id": "OI067-2",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 4500.0
+        }
+      ],
+      "subtotal": 11000.0,
+      "order_total": 11600.0
+    },
+    {
+      "order_id": "O068",
+      "order_date": "2026-04-27",
+      "customer": {
+        "customer_id": "C005",
+        "name": "Esther Akinyi",
+        "gender": "Female",
+        "age": 30,
+        "city": "Mombasa",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Mombasa",
+        "delivery_fee": 0,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY068",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 143725.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI068-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 12825.0
+        },
+        {
+          "order_item_id": "OI068-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 64000.0
+        },
+        {
+          "order_item_id": "OI068-3",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 46500.0
+        },
+        {
+          "order_item_id": "OI068-4",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 20400.0
+        }
+      ],
+      "subtotal": 143725.0,
+      "order_total": 143725.0
+    },
+    {
+      "order_id": "O069",
+      "order_date": "2026-01-28",
+      "customer": {
+        "customer_id": "C001",
+        "name": "Alice Wanjiku",
+        "gender": "Female",
+        "age": 27,
+        "city": "Nairobi",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Nairobi",
+        "delivery_fee": 450,
+        "delivery_days": 5
+      },
+      "payment": {
+        "payment_id": "PAY069",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 13950.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI069-1",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 13500.0
+        }
+      ],
+      "subtotal": 13500.0,
+      "order_total": 13950.0
+    },
+    {
+      "order_id": "O070",
+      "order_date": "2026-03-17",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Completed",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY070",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 54910.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI070-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 24000.0
+        },
+        {
+          "order_item_id": "OI070-2",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 3060.0
+        },
+        {
+          "order_item_id": "OI070-3",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 15500.0
+        },
+        {
+          "order_item_id": "OI070-4",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 2,
+          "discount_pct": 5,
+          "line_total": 12350.0
+        }
+      ],
+      "subtotal": 54910.0,
+      "order_total": 54910.0
+    },
+    {
+      "order_id": "O071",
+      "order_date": "2026-04-17",
+      "customer": {
+        "customer_id": "C011",
+        "name": "Karen Atieno",
+        "gender": "Female",
+        "age": 29,
+        "city": "Kisumu",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Kisumu",
+        "delivery_fee": 600,
+        "delivery_days": 1
+      },
+      "payment": {
+        "payment_id": "PAY071",
+        "payment_method": "Card",
+        "payment_status": "Refunded",
+        "amount": 12600.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI071-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 12000.0
+        }
+      ],
+      "subtotal": 12000.0,
+      "order_total": 12600.0
+    },
+    {
+      "order_id": "O072",
+      "order_date": "2026-01-05",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 2
+      },
+      "payment": {
+        "payment_id": "PAY072",
+        "payment_method": "Card",
+        "payment_status": "Refunded",
+        "amount": 250600.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI072-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 2,
+          "discount_pct": 10,
+          "line_total": 57600.0
+        },
+        {
+          "order_item_id": "OI072-2",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 144500.0
+        },
+        {
+          "order_item_id": "OI072-3",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 44000.0
+        },
+        {
+          "order_item_id": "OI072-4",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 1,
+          "discount_pct": 0,
+          "line_total": 4500.0
+        }
+      ],
+      "subtotal": 250600.0,
+      "order_total": 250600.0
+    },
+    {
+      "order_id": "O073",
+      "order_date": "2026-07-02",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Website",
+      "status": "Pending",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 0,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY073",
+        "payment_method": "M-Pesa",
+        "payment_status": "Pending",
+        "amount": 229500.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI073-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 229500.0
+        }
+      ],
+      "subtotal": 229500.0,
+      "order_total": 229500.0
+    },
+    {
+      "order_id": "O074",
+      "order_date": "2026-05-26",
+      "customer": {
+        "customer_id": "C005",
+        "name": "Esther Akinyi",
+        "gender": "Female",
+        "age": 30,
+        "city": "Mombasa",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Mombasa",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY074",
+        "payment_method": "Card",
+        "payment_status": "Paid",
+        "amount": 88055.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI074-1",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 1,
+          "discount_pct": 15,
+          "line_total": 1530.0
+        },
+        {
+          "order_item_id": "OI074-2",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 20900.0
+        },
+        {
+          "order_item_id": "OI074-3",
+          "product_id": "P010",
+          "product_name": "Noise-Cancelling Headphones",
+          "category": "Audio",
+          "unit_price": 15500,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 46500.0
+        },
+        {
+          "order_item_id": "OI074-4",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 19125.0
+        }
+      ],
+      "subtotal": 88055.0,
+      "order_total": 88055.0
+    },
+    {
+      "order_id": "O075",
+      "order_date": "2026-03-08",
+      "customer": {
+        "customer_id": "C008",
+        "name": "Henry Mutua",
+        "gender": "Male",
+        "age": 41,
+        "city": "Machakos",
+        "segment": "Corporate"
+      },
+      "sales_channel": "Website",
+      "status": "Pending",
+      "shipping": {
+        "city": "Machakos",
+        "delivery_fee": 0,
+        "delivery_days": 3
+      },
+      "payment": {
+        "payment_id": "PAY075",
+        "payment_method": "Card",
+        "payment_status": "Pending",
+        "amount": 152400.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI075-1",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 86400.0
+        },
+        {
+          "order_item_id": "OI075-2",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 66000.0
+        }
+      ],
+      "subtotal": 152400.0,
+      "order_total": 152400.0
+    },
+    {
+      "order_id": "O076",
+      "order_date": "2026-07-25",
+      "customer": {
+        "customer_id": "C006",
+        "name": "Felix Kiptoo",
+        "gender": "Male",
+        "age": 28,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 4
+      },
+      "payment": {
+        "payment_id": "PAY076",
+        "payment_method": "Card",
+        "payment_status": "Refunded",
+        "amount": 249450.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI076-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 3,
+          "discount_pct": 10,
+          "line_total": 229500.0
+        },
+        {
+          "order_item_id": "OI076-2",
+          "product_id": "P005",
+          "product_name": "USB-C Hub",
+          "category": "Accessories",
+          "unit_price": 4500,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 12825.0
+        },
+        {
+          "order_item_id": "OI076-3",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 7125.0
+        }
+      ],
+      "subtotal": 249450.0,
+      "order_total": 249450.0
+    },
+    {
+      "order_id": "O077",
+      "order_date": "2026-05-26",
+      "customer": {
+        "customer_id": "C006",
+        "name": "Felix Kiptoo",
+        "gender": "Male",
+        "age": 28,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 6
+      },
+      "payment": {
+        "payment_id": "PAY077",
+        "payment_method": "Card",
+        "payment_status": "Refunded",
+        "amount": 104550.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI077-1",
+          "product_id": "P008",
+          "product_name": "External SSD",
+          "category": "Storage",
+          "unit_price": 12000,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 10800.0
+        },
+        {
+          "order_item_id": "OI077-2",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 37000.0
+        },
+        {
+          "order_item_id": "OI077-3",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 44000.0
+        },
+        {
+          "order_item_id": "OI077-4",
+          "product_id": "P009",
+          "product_name": "Webcam",
+          "category": "Electronics",
+          "unit_price": 7500,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 12750.0
+        }
+      ],
+      "subtotal": 104550.0,
+      "order_total": 104550.0
+    },
+    {
+      "order_id": "O078",
+      "order_date": "2026-06-23",
+      "customer": {
+        "customer_id": "C007",
+        "name": "Grace Wambui",
+        "gender": "Female",
+        "age": 35,
+        "city": "Thika",
+        "segment": "Small Business"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Completed",
+      "shipping": {
+        "city": "Thika",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY078",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Paid",
+        "amount": 219600.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI078-1",
+          "product_id": "P001",
+          "product_name": "Laptop",
+          "category": "Electronics",
+          "unit_price": 85000,
+          "quantity": 1,
+          "discount_pct": 5,
+          "line_total": 80750.0
+        },
+        {
+          "order_item_id": "OI078-2",
+          "product_id": "P003",
+          "product_name": "Mechanical Keyboard",
+          "category": "Accessories",
+          "unit_price": 6500,
+          "quantity": 1,
+          "discount_pct": 10,
+          "line_total": 5850.0
+        },
+        {
+          "order_item_id": "OI078-3",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 0,
+          "line_total": 37000.0
+        },
+        {
+          "order_item_id": "OI078-4",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 0,
+          "line_total": 96000.0
+        }
+      ],
+      "subtotal": 219600.0,
+      "order_total": 219600.0
+    },
+    {
+      "order_id": "O079",
+      "order_date": "2026-01-24",
+      "customer": {
+        "customer_id": "C003",
+        "name": "Carol Njeri",
+        "gender": "Female",
+        "age": 24,
+        "city": "Nakuru",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Physical Store",
+      "status": "Pending",
+      "shipping": {
+        "city": "Nakuru",
+        "delivery_fee": 0,
+        "delivery_days": 7
+      },
+      "payment": {
+        "payment_id": "PAY079",
+        "payment_method": "Card",
+        "payment_status": "Pending",
+        "amount": 125710.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI079-1",
+          "product_id": "P006",
+          "product_name": "Office Chair",
+          "category": "Furniture",
+          "unit_price": 18500,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 31450.0
+        },
+        {
+          "order_item_id": "OI079-2",
+          "product_id": "P007",
+          "product_name": "Standing Desk",
+          "category": "Furniture",
+          "unit_price": 32000,
+          "quantity": 3,
+          "discount_pct": 5,
+          "line_total": 91200.0
+        },
+        {
+          "order_item_id": "OI079-3",
+          "product_id": "P002",
+          "product_name": "Wireless Mouse",
+          "category": "Accessories",
+          "unit_price": 1800,
+          "quantity": 2,
+          "discount_pct": 15,
+          "line_total": 3060.0
+        }
+      ],
+      "subtotal": 125710.0,
+      "order_total": 125710.0
+    },
+    {
+      "order_id": "O080",
+      "order_date": "2026-01-14",
+      "customer": {
+        "customer_id": "C009",
+        "name": "Irene Chebet",
+        "gender": "Female",
+        "age": 26,
+        "city": "Eldoret",
+        "segment": "Consumer"
+      },
+      "sales_channel": "Mobile App",
+      "status": "Cancelled",
+      "shipping": {
+        "city": "Eldoret",
+        "delivery_fee": 0,
+        "delivery_days": 2
+      },
+      "payment": {
+        "payment_id": "PAY080",
+        "payment_method": "Bank Transfer",
+        "payment_status": "Refunded",
+        "amount": 56100.0
+      },
+      "items": [
+        {
+          "order_item_id": "OI080-1",
+          "product_id": "P004",
+          "product_name": "24-inch Monitor",
+          "category": "Electronics",
+          "unit_price": 22000,
+          "quantity": 3,
+          "discount_pct": 15,
+          "line_total": 56100.0
+        }
+      ],
+      "subtotal": 56100.0,
+      "order_total": 56100.0
+    }
+  ]
+}
