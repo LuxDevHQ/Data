@@ -17,11 +17,12 @@ A collection of beginner-friendly datasets and guided analytics projects for lea
 | [Kenya retail sales](projects/kenya-retail-sales/) | Beginner–intermediate | Nested JSON, 80 orders / 199 items | JSON normalization, relational modelling, SQL, Power BI |
 | [Kenya mobile money](projects/kenya-mobile-money/) | Intermediate | CSV, 6,000 transactions | pandas, SQL windows, time series, RFM, cohorts |
 | [SokoPay Kenya](projects/sokopay/) | Advanced | CSV, 15,070 transactions | data cleaning, retention, sessionization, statistics, modelling |
+| [Kenya agentic payments](projects/kenya-agentic-payments/) | Intermediate–advanced | CSV, 8,002 payment requests | payment analytics, risk controls, latency, wallet analysis |
 | [Hospital operations](projects/hospital-operations/) | Beginner–intermediate | Excel workbook with related sheets | PostgreSQL import, joins, operational KPIs, Power BI |
 
 ### Recommended learning order
 
-- **New analyst:** Hospital operations → Kenya retail sales → Kenya mobile money → SokoPay.
+- **New analyst:** Hospital operations → Kenya retail sales → Kenya mobile money → Kenya agentic payments → SokoPay.
 - **SQL learner:** Follow the [PostgreSQL guide](docs/postgresql-guide.md), then solve a project's questions in SQL.
 - **Python learner:** Start with Kenya mobile money and compare each pandas result with SQL.
 - **Portfolio builder:** Complete SokoPay and publish a cleaned notebook, reproducible SQL, labelled charts, and an executive summary.
@@ -78,6 +79,7 @@ For SQL setup examples, table definitions, import guidance, and 30 practice ques
     ├── hospital-operations/        # brief and workbook
     ├── kenya-retail-sales/         # nested-JSON retail project brief
     ├── kenya-mobile-money/         # brief and CSV
+    ├── kenya-agentic-payments/     # brief and synthetic agentic-payments CSV
     └── sokopay/                    # brief and CSV
 ```
 
