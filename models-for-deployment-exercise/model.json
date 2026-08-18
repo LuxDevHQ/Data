@@ -1,0 +1,22 @@
+{
+  "model_name": "transaction_risk_classifier",
+  "model_type": "logistic_regression",
+  "model_version": "1.0.0",
+  "description": "Classroom-only model that estimates whether a mobile-money transaction needs review.",
+  "features": [
+    "amount_kes",
+    "hour_of_day",
+    "failed_attempts_24h"
+  ],
+  "standardization": {
+    "mean": [5000.0, 13.0, 0.5],
+    "scale": [4500.0, 6.0, 1.0]
+  },
+  "coefficients": [1.2, -0.35, 1.6],
+  "intercept": -1.1,
+  "decision_threshold": 0.5,
+  "labels": {
+    "negative": "low_risk",
+    "positive": "review"
+  }
+}
