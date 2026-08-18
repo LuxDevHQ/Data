@@ -49,6 +49,10 @@ These files do not have a required sequence. Profile one, decide on a question, 
 
 The [`datasets/json`](datasets/json/) directory contains small practice files about users, students, cars, and Kenyan data. Use these to practise reading nested data, normalizing records into tables, and checking schemas. Inspect the structure first: similarly named files may have different fields and should not be combined without validation.
 
+## Deployment class model
+
+The [`models-for-deployment-exercise`](models-for-deployment-exercise/) folder contains a small, dependency-free transaction-risk model for the classroom deployment exercise. It includes a portable JSON model artifact, a Python inference script, and example requests that can be reused in a command-line tool or web API.
+
 ## A simple study workflow
 
 ```text
@@ -71,6 +75,7 @@ For SQL setup examples, table definitions, import guidance, and 30 practice ques
 ├── README.md                       # orientation and learning path
 ├── docs/
 │   └── postgresql-guide.md         # SQL setup and exercises
+├── models-for-deployment-exercise/      # model artifact and inference example
 ├── datasets/
 │   ├── csv/                        # standalone CSV datasets
 │   ├── excel/                      # standalone Excel workbooks
