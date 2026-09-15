@@ -1,0 +1,18 @@
+Country,Continent,SalesRegion,RegionalManager,ManagerEmail
+United States,North America,Americas,Grace Njeri,grace.njeri@twigatrails.example
+Canada,North America,Americas,Grace Njeri,grace.njeri@twigatrails.example
+Brazil,South America,Americas,Grace Njeri,grace.njeri@twigatrails.example
+United Kingdom,Europe,Europe,Daniel Otieno,daniel.otieno@twigatrails.example
+Germany,Europe,Europe,Daniel Otieno,daniel.otieno@twigatrails.example
+France,Europe,Europe,Daniel Otieno,daniel.otieno@twigatrails.example
+Netherlands,Europe,Europe,Daniel Otieno,daniel.otieno@twigatrails.example
+Italy,Europe,Europe,Daniel Otieno,daniel.otieno@twigatrails.example
+Spain,Europe,Europe,Daniel Otieno,daniel.otieno@twigatrails.example
+Australia,Oceania,Asia-Pacific,Amina Wanjiru,amina.wanjiru@twigatrails.example
+China,Asia,Asia-Pacific,Amina Wanjiru,amina.wanjiru@twigatrails.example
+India,Asia,Asia-Pacific,Amina Wanjiru,amina.wanjiru@twigatrails.example
+Japan,Asia,Asia-Pacific,Amina Wanjiru,amina.wanjiru@twigatrails.example
+United Arab Emirates,Asia,Middle East & Africa,Brian Kiprop,brian.kiprop@twigatrails.example
+South Africa,Africa,Middle East & Africa,Brian Kiprop,brian.kiprop@twigatrails.example
+Kenya,Africa,Middle East & Africa,Brian Kiprop,brian.kiprop@twigatrails.example
+Nigeria,Africa,Middle East & Africa,Brian Kiprop,brian.kiprop@twigatrails.example

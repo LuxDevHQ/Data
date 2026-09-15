@@ -1,0 +1,156 @@
+{
+  "seed": 20260915,
+  "row_counts_raw": {
+    "2023": 3867,
+    "2024": 4626,
+    "2025": 5434,
+    "2026_H1": 2708
+  },
+  "row_counts_clean": {
+    "2023": 3867,
+    "2024": 4589,
+    "2025": 5434,
+    "2026_H1": 2708
+  },
+  "duplicates_removed_2024": 37,
+  "blank_agent_rows_2023": 1100,
+  "customers": 6500,
+  "distinct_country_spellings_raw": 46,
+  "distinct_countries_clean": 17,
+  "reviews": 6759,
+  "by_booking_year": {
+    "2023": {
+      "bookings": 3867,
+      "cancelled": 360,
+      "cancellation_rate": 0.0931,
+      "net_revenue": 29800966.0,
+      "cost": 18261115,
+      "commission": 2453365.33,
+      "gross_profit": 9086485.67,
+      "gross_margin": 0.3049,
+      "travellers": 12333,
+      "avg_booking_value": 8497.57,
+      "reviews": 1952,
+      "avg_rating": 4.11,
+      "nps": 32.7
+    },
+    "2024": {
+      "bookings": 4589,
+      "cancelled": 419,
+      "cancellation_rate": 0.0913,
+      "net_revenue": 39694230.62,
+      "cost": 22919020,
+      "commission": 3189007.98,
+      "gross_profit": 13586202.65,
+      "gross_margin": 0.3423,
+      "travellers": 14473,
+      "avg_booking_value": 9519.0,
+      "revenue_yoy": 0.332,
+      "reviews": 2204,
+      "avg_rating": 4.15,
+      "nps": 36.5
+    },
+    "2025": {
+      "bookings": 5434,
+      "cancelled": 533,
+      "cancellation_rate": 0.0981,
+      "net_revenue": 53358318.5,
+      "cost": 29479865,
+      "commission": 4083572.82,
+      "gross_profit": 19794880.68,
+      "gross_margin": 0.371,
+      "travellers": 17133,
+      "avg_booking_value": 10887.23,
+      "revenue_yoy": 0.3442,
+      "reviews": 2603,
+      "avg_rating": 4.12,
+      "nps": 35.4
+    }
+  },
+  "all_three_years": {
+    "bookings": 13890,
+    "cancelled": 1312,
+    "cancellation_rate": 0.0945,
+    "net_revenue": 122853515.12,
+    "cost": 70660000,
+    "commission": 9725946.12,
+    "gross_profit": 42467569.0,
+    "gross_margin": 0.3457,
+    "travellers": 43939,
+    "avg_booking_value": 9767.33
+  },
+  "revenue_2025_by_category": {
+    "Luxury": 39800394.12,
+    "Mid-Range": 10953691.12,
+    "Budget": 2604233.25
+  },
+  "revenue_2025_by_channel": {
+    "Direct": 20243449.38,
+    "OTA": 13139612.12,
+    "Tour Operator": 13087757.0,
+    "Corporate": 6887500.0
+  },
+  "revenue_2025_by_sales_region": {
+    "Europe": 20322307.62,
+    "Americas": 16864260.88,
+    "Asia-Pacific": 8683855.0,
+    "Middle East & Africa": 7487895.0
+  },
+  "top5_packages_2025": {
+    "Mara Great Migration Luxury Camp": 7271086.25,
+    "Samburu & Laikipia Private Conservancy": 7213135.5,
+    "Serengeti Migration Fly-In": 7174494.0,
+    "Ultimate East Africa Honeymoon": 5561033.38,
+    "Rwanda Gorillas & Golden Monkeys": 4520608.5
+  },
+  "revenue_2025_by_booking_month": {
+    "1": 3098201.75,
+    "2": 2964141.5,
+    "3": 3749574.75,
+    "4": 4483392.0,
+    "5": 5544682.0,
+    "6": 5568708.5,
+    "7": 4844260.38,
+    "8": 4834995.88,
+    "9": 4200836.5,
+    "10": 5107992.75,
+    "11": 4497869.75,
+    "12": 4463662.75
+  },
+  "revenue_2025_by_travel_month": {
+    "1": 4892565.0,
+    "2": 3217455.75,
+    "3": 2754826.38,
+    "4": 1260211.12,
+    "5": 1270893.5,
+    "6": 3136538.88,
+    "7": 6141106.38,
+    "8": 7369506.75,
+    "9": 6345365.5,
+    "10": 5186450.88,
+    "11": 2409125.75,
+    "12": 6028176.12
+  },
+  "cancellation_rate_by_channel": {
+    "Direct": 0.0718,
+    "OTA": 0.1488,
+    "Tour Operator": 0.0741,
+    "Corporate": 0.0691
+  },
+  "target_2025": 53663000,
+  "after_2026_refresh": {
+    "bookings_total": 16598,
+    "h1_2026": {
+      "bookings": 2708,
+      "cancelled": 228,
+      "cancellation_rate": 0.0842,
+      "net_revenue": 31277216.25,
+      "cost": 16651670,
+      "commission": 2309325.11,
+      "gross_profit": 12316221.14,
+      "gross_margin": 0.3938,
+      "travellers": 8598,
+      "avg_booking_value": 12611.78
+    }
+  }
+}

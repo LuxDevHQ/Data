@@ -1,0 +1,1085 @@
+<title>Twiga Trails Power BI Workshop</title>
+<meta name="description" content="End-to-end Power BI workshop project for the LuxDevHQ Data Analytics cohort, led by Caleb Kilemba.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #F3F5F1;
+  --surface: #FFFFFF;
+  --surface-2: #E7ECE5;
+  --ink: #18211C;
+  --ink-2: #4B5851;
+  --line: #D2D9D0;
+  --accent: #946510;
+  --accent-soft: #F0E2C2;
+  --green: #2D5B44;
+  --green-soft: #DCE8DF;
+  --rust: #A2461E;
+  --rust-soft: #F5E0D4;
+  --code-bg: #1C2621;
+  --code-ink: #E3EBE4;
+  --code-dim: #8FA398;
+  --code-key: #E7BB63;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101612;
+    --surface: #17201A;
+    --surface-2: #212B24;
+    --ink: #E6ECE5;
+    --ink-2: #A5B2A9;
+    --line: #2E3A32;
+    --accent: #E4B45C;
+    --accent-soft: #392E17;
+    --green: #8DC4A3;
+    --green-soft: #1B3025;
+    --rust: #E59672;
+    --rust-soft: #3A2319;
+    --code-bg: #0A0F0C;
+    --code-ink: #DCE5DD;
+    --code-dim: #7E9187;
+    --code-key: #E4B45C;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101612;
+  --surface: #17201A;
+  --surface-2: #212B24;
+  --ink: #E6ECE5;
+  --ink-2: #A5B2A9;
+  --line: #2E3A32;
+  --accent: #E4B45C;
+  --accent-soft: #392E17;
+  --green: #8DC4A3;
+  --green-soft: #1B3025;
+  --rust: #E59672;
+  --rust-soft: #3A2319;
+  --code-bg: #0A0F0C;
+  --code-ink: #DCE5DD;
+  --code-dim: #7E9187;
+  --code-key: #E4B45C;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.62;
+  padding-inline: 20px;
+  padding-block: 0 96px;
+}
+a { color: var(--green); text-underline-offset: 3px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+/* ---------- masthead ---------- */
+.mast {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-block: 56px 36px;
+  display: grid;
+  gap: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
+.eyebrow b { color: var(--accent); font-weight: 500; }
+h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(40px, 7vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  margin: 0;
+  text-wrap: balance;
+  max-width: 14ch;
+}
+.lede {
+  font-size: clamp(18px, 2.2vw, 21px);
+  line-height: 1.5;
+  color: var(--ink-2);
+  max-width: 58ch;
+  margin: 0;
+}
+.lede strong { color: var(--ink); font-weight: 500; }
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.facts div { background: var(--surface); padding: 14px 16px; display: grid; gap: 2px; }
+.facts dt { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2); }
+.facts dd { margin: 0; font-family: var(--display); font-weight: 600; font-size: 24px; font-variant-numeric: tabular-nums; }
+.facts dd small { font-family: var(--body); font-size: 13px; font-weight: 400; color: var(--ink-2); }
+.credit { font-size: 14.5px; color: var(--ink-2); margin: 0; }
+.credit strong { color: var(--ink); font-weight: 600; }
+
+/* ---------- layout ---------- */
+.frame {
+  max-width: 1180px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 56px;
+  padding-top: 40px;
+}
+nav.toc { position: sticky; top: 24px; align-self: start; font-size: 14px; }
+nav.toc p { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 10px; }
+nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+nav.toc a {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  padding: 5px 8px;
+  color: var(--ink-2);
+  text-decoration: none;
+  border-radius: 4px;
+}
+nav.toc a:hover { background: var(--surface-2); color: var(--ink); }
+nav.toc a span { font-family: var(--mono); font-size: 12px; color: var(--accent); padding-top: 2px; }
+nav.toc .sep { height: 1px; background: var(--line); margin: 8px 0; }
+
+main { min-width: 0; max-width: 760px; }
+section { padding-block: 8px 44px; }
+section + section { border-top: 1px solid var(--line); padding-top: 40px; }
+.modnum {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.modnum .time { color: var(--ink-2); }
+h2 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  margin: 0 0 16px;
+  text-wrap: balance;
+}
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 32px 0 10px;
+  text-wrap: balance;
+}
+p, li { max-width: 68ch; }
+p { margin: 0 0 14px; }
+ul, ol { padding-left: 22px; margin: 0 0 16px; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--ink-2); }
+ol.steps { counter-reset: s; list-style: none; padding-left: 0; display: grid; gap: 10px; }
+ol.steps > li { counter-increment: s; display: grid; grid-template-columns: 30px 1fr; gap: 6px; margin: 0; }
+ol.steps > li::before {
+  content: counter(s);
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  width: 23px; height: 23px;
+  display: grid; place-items: center;
+  margin-top: 1px;
+}
+code, kbd {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+kbd { border: 1px solid var(--line); background: var(--surface); }
+strong { font-weight: 600; }
+
+/* code blocks */
+.code {
+  margin: 14px 0 20px;
+  background: var(--code-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.code .lang {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--code-dim);
+  padding: 8px 16px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.code .lang b { color: var(--code-key); font-weight: 500; }
+.code pre {
+  margin: 0;
+  padding: 10px 16px 16px;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--code-ink);
+  tab-size: 4;
+}
+.code pre .c { color: var(--code-dim); }
+.code pre .k { color: var(--code-key); }
+
+/* tables */
+.tbl { overflow-x: auto; margin: 14px 0 22px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font-family: var(--mono); font-weight: 500; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); background: var(--surface-2); white-space: nowrap; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td code { white-space: nowrap; }
+.agenda td:first-child { font-family: var(--mono); font-size: 13.5px; white-space: nowrap; color: var(--ink-2); }
+.agenda tr.break td { color: var(--ink-2); font-style: italic; background: var(--bg); }
+
+/* callouts */
+.note {
+  margin: 18px 0 22px;
+  padding: 14px 18px;
+  border-radius: 6px;
+  display: grid;
+  gap: 4px;
+}
+.note > .tag { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+.note p:last-child, .note ul:last-child { margin-bottom: 0; }
+.note.check { background: var(--green-soft); }
+.note.check > .tag { color: var(--green); }
+.note.trap { background: var(--rust-soft); }
+.note.trap > .tag { color: var(--rust); }
+.note.why { background: var(--accent-soft); }
+.note.why > .tag { color: var(--accent); }
+
+.checkgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 18px; margin-top: 6px; }
+.checkgrid div { display: grid; gap: 0; }
+.checkgrid span { font-size: 13px; color: var(--ink-2); }
+.checkgrid b { font-family: var(--display); font-weight: 600; font-size: 20px; font-variant-numeric: tabular-nums; }
+
+details.fac {
+  margin: 18px 0 8px;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+}
+details.fac summary {
+  cursor: pointer;
+  padding: 10px 16px;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+details.fac[open] summary { border-bottom: 1px dashed var(--line); }
+details.fac .inner { padding: 12px 16px 4px; font-size: 15px; }
+
+/* star schema */
+.schema {
+  margin: 18px 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 16px;
+}
+.tb { border: 1px solid var(--line); border-radius: 5px; background: var(--bg); padding: 8px 10px; font-size: 13px; line-height: 1.45; }
+.tb b { display: block; font-family: var(--mono); font-weight: 500; font-size: 12.5px; color: var(--ink); margin-bottom: 2px; }
+.tb small { color: var(--ink-2); display: block; }
+.tb.fact { grid-column: 2; grid-row: 2 / span 2; background: var(--accent-soft); border-color: var(--accent); display: grid; align-content: center; text-align: center; }
+.tb.fact b { font-size: 15px; }
+.tb.snow { border-style: dashed; }
+.schema .legend { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink-2); display: flex; gap: 6px 18px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 10px; }
+
+/* pages grid */
+.pages { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 14px 0 22px; }
+.pg { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; display: grid; align-content: start; gap: 6px; }
+.pg h4 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 17px; }
+.pg p { font-size: 13.5px; color: var(--ink-2); margin: 0; }
+.pg ul { font-size: 14px; margin: 0; padding-left: 18px; }
+.pg li { margin-bottom: 2px; }
+
+.rubric td:nth-child(2) { font-family: var(--mono); white-space: nowrap; }
+
+footer { max-width: 1180px; margin: 24px auto 0; padding-top: 22px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--ink-2); }
+
+@media (max-width: 920px) {
+  .frame { grid-template-columns: 1fr; gap: 20px; }
+  nav.toc { position: static; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; }
+  nav.toc ol { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  nav.toc .sep { display: none; }
+}
+@media (max-width: 560px) {
+  .schema { grid-template-columns: 1fr 1fr; }
+  .tb.fact { grid-column: 1 / -1; grid-row: auto; order: -1; }
+  .mast { padding-block: 36px 28px; }
+}
+@media print {
+  nav.toc { display: none; }
+  .frame { grid-template-columns: 1fr; }
+  details.fac { display: none; }
+  section { break-inside: auto; }
+  .code pre { white-space: pre-wrap; }
+}
+</style>
+
+<header class="mast">
+  <div class="eyebrow"><b>LuxDevHQ · Data Analytics Cohort</b><span>Power BI workshop kit</span><span>Sept 2026 edition</span></div>
+  <h1>Twiga Trails Safaris</h1>
+  <p class="lede">An end-to-end Power BI project. You'll turn <strong>eight messy source files</strong> from a Nairobi safari operator into a <strong>secure report that refreshes automatically</strong>, then present what you find to the "CEO".</p>
+  <dl class="facts">
+    <div><dt>Format</dt><dd>1 day <small>08:30–17:30 EAT</small></dd></div>
+    <div><dt>Raw booking rows</dt><dd>13,927</dd></div>
+    <div><dt>Data traps</dt><dd>6 <small>to find &amp; fix</small></dd></div>
+    <div><dt>DAX measures</dt><dd>21</dd></div>
+    <div><dt>Report pages</dt><dd>5 <small>+ tooltip</small></dd></div>
+  </dl>
+  <p class="credit">Lead facilitator <strong>Caleb Kilemba</strong> · Level: beginner → intermediate · Needs Power BI Desktop (Windows) and a work or school Microsoft account for Module 8.</p>
+</header>
+
+<div class="frame">
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#brief"><span>—</span>The brief</a></li>
+      <li><a href="#agenda"><span>—</span>Agenda</a></li>
+      <li><a href="#setup"><span>—</span>Setup &amp; the data</a></li>
+      <li class="sep" aria-hidden="true"></li>
+      <li><a href="#m1"><span>01</span>Get data</a></li>
+      <li><a href="#m2"><span>02</span>Clean in Power Query</a></li>
+      <li><a href="#m3"><span>03</span>Model the star</a></li>
+      <li><a href="#m4"><span>04</span>Write the DAX</a></li>
+      <li><a href="#m5"><span>05</span>Build the report</a></li>
+      <li><a href="#m6"><span>06</span>Interactivity</a></li>
+      <li><a href="#m7"><span>07</span>Row-level security</a></li>
+      <li><a href="#m8"><span>08</span>Publish &amp; refresh</a></li>
+      <li><a href="#m9"><span>09</span>Present insights</a></li>
+      <li class="sep" aria-hidden="true"></li>
+      <li><a href="#rubric"><span>—</span>Assessment rubric</a></li>
+      <li><a href="#key"><span>—</span>Answer key</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <!-- ================= BRIEF ================= -->
+    <section id="brief">
+      <div class="modnum"><span>Start here</span></div>
+      <h2>The brief</h2>
+      <p><strong>Twiga Trails Safaris</strong> is a fictional tour operator based in Nairobi. It sells 18 safari packages across Kenya, Tanzania, Uganda and Rwanda, from 3-day budget camping at the Mara to a 12-day honeymoon. Guests book directly on the website, through online travel agencies (OTAs), through overseas tour operators, or as corporate groups.</p>
+      <p>The CEO is tired of emailed Excel files that never agree with each other. You're the new data analyst, and your job is to deliver <strong>one trusted report</strong> that answers these questions:</p>
+      <ol>
+        <li>How much revenue and gross profit are we making, and how fast are we growing year on year?</li>
+        <li>Are we hitting the monthly revenue targets set by finance?</li>
+        <li>When do guests actually <em>travel</em>, and how is that different from when they <em>book</em>? (Great Migration season vs. the long rains.)</li>
+        <li>Which sales channels make money, and which ones get cancelled the most?</li>
+        <li>Which packages and parks drive the business? Is the new Samburu &amp; Laikipia package (launched July 2024) working?</li>
+        <li>Where do our guests come from, and how does each regional sales manager's patch perform?</li>
+        <li>How happy are guests (average rating and NPS), and where do we disappoint them?</li>
+      </ol>
+      <div class="note why">
+        <span class="tag">What you'll hand in</span>
+        <ul>
+          <li>A <code>.pbix</code> file with a clean star-schema model, 21 measures and 5 report pages.</li>
+          <li>The report published to a Power BI Service workspace with row-level security and scheduled refresh.</li>
+          <li>A 5-minute presentation of three insights, each backed by a visual from your report.</li>
+        </ul>
+      </div>
+      <p>All the numbers in this handbook come from the real files. Whenever you see a green <strong>Checkpoint</strong> box, compare your report against it. If your numbers are different, fix that before you move on, because every later step depends on it.</p>
+    </section>
+
+    <!-- ================= AGENDA ================= -->
+    <section id="agenda">
+      <div class="modnum"><span>Run of the day</span></div>
+      <h2>Agenda</h2>
+      <div class="tbl">
+        <table class="agenda">
+          <thead><tr><th>Time (EAT)</th><th>Module</th><th>Outcome</th></tr></thead>
+          <tbody>
+            <tr><td>08:30–09:00</td><td>Setup check &amp; brief</td><td>Everyone has Power BI Desktop open and the kit folder unzipped</td></tr>
+            <tr><td>09:00–09:40</td><td>01 · Get data</td><td>All 8 sources loading, with a folder parameter</td></tr>
+            <tr><td>09:40–10:40</td><td>02 · Clean in Power Query</td><td>6 data traps fixed; row counts match the checkpoint</td></tr>
+            <tr class="break"><td>10:40–10:55</td><td colspan="2">Tea break</td></tr>
+            <tr><td>10:55–11:55</td><td>03 · Model the star</td><td>Relationships, date table, inactive travel-date link</td></tr>
+            <tr><td>11:55–13:00</td><td>04 · DAX, part 1</td><td>Core revenue, cost, profit and cancellation measures</td></tr>
+            <tr class="break"><td>13:00–13:45</td><td colspan="2">Lunch</td></tr>
+            <tr><td>13:45–14:30</td><td>04 · DAX, part 2</td><td>Time intelligence, targets, guest experience</td></tr>
+            <tr><td>14:30–15:45</td><td>05 + 06 · Report &amp; interactivity</td><td>5 pages, drill-through, tooltip, bookmarks</td></tr>
+            <tr class="break"><td>15:45–16:00</td><td colspan="2">Tea break</td></tr>
+            <tr><td>16:00–16:45</td><td>07 + 08 · Security &amp; publish</td><td>RLS tested, report live, 2026 file refreshed in</td></tr>
+            <tr><td>16:45–17:30</td><td>09 · Present insights</td><td>Teams of 2–3 present for 5 minutes each</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <details class="fac">
+        <summary>Facilitator note — running it over several evenings</summary>
+        <div class="inner">
+          <p>If you're splitting this into evening sessions: <strong>Session 1</strong> covers Modules 1–3, <strong>Session 2</strong> covers Module 4, <strong>Session 3</strong> covers Modules 5–6, and <strong>Session 4</strong> covers Modules 7–9. Start each session by sharing a "catch-up" <code>.pbix</code> saved at the end of the previous one, so learners who fell behind can still keep up.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ================= SETUP ================= -->
+    <section id="setup">
+      <div class="modnum"><span>Before the day</span></div>
+      <h2>Setup &amp; the data</h2>
+      <h3>Checklist for learners</h3>
+      <ul>
+        <li><strong>Power BI Desktop</strong> (free) from the Microsoft Store, fully updated. It runs <strong>on Windows only</strong>. Mac users need a Windows virtual machine (Parallels, UTM) or a cloud PC. Sort this out <em>before</em> the day.</li>
+        <li>A <strong>work or school Microsoft account</strong> for Power BI Service (Module 8). Personal Gmail and Outlook.com addresses can't sign up. Ask the LuxDevHQ team which licence or trial the cohort is using.</li>
+        <li>The kit folder unzipped to a short path, for example <code>C:\Workshop\twiga-trails\</code>. Long OneDrive paths cause refresh errors later.</li>
+        <li>Go to <em>File → Options → Regional settings</em> and set the import locale to <strong>English (United States)</strong>, so decimals such as <code>0.05</code> load correctly.</li>
+      </ul>
+
+      <h3>What's in the kit</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>File</th><th>Grain (one row = …)</th><th class="num">Rows</th><th>Watch out for</th></tr></thead>
+          <tbody>
+            <tr><td><code>Bookings/Bookings_2023.csv</code></td><td>a booking</td><td class="num">3,867</td><td>AgentID is blank for website bookings (legacy system)</td></tr>
+            <tr><td><code>Bookings/Bookings_2024.csv</code></td><td>a booking</td><td class="num">4,626</td><td>37 rows were accidentally exported twice</td></tr>
+            <tr><td><code>Bookings/Bookings_2025.csv</code></td><td>a booking</td><td class="num">5,434</td><td>Status casing, trailing spaces, "Canceled"</td></tr>
+            <tr><td><code>_later/Bookings_2026_H1.csv</code></td><td>a booking</td><td class="num">2,708</td><td>Don't use it yet. It "arrives" in Module 8</td></tr>
+            <tr><td><code>Customers.xlsx</code></td><td>a customer</td><td class="num">6,500</td><td>Title rows above the header; 46 spellings of 17 countries</td></tr>
+            <tr><td><code>Packages.csv</code></td><td>a safari package</td><td class="num">18</td><td>Category is shared with Targets</td></tr>
+            <tr><td><code>Parks.csv</code></td><td>a national park / reserve</td><td class="num">10</td><td>Has latitude/longitude for maps</td></tr>
+            <tr><td><code>Agents.csv</code></td><td>a sales agent</td><td class="num">14</td><td>CommissionPct is a decimal (0.15 = 15%)</td></tr>
+            <tr><td><code>Regions.csv</code></td><td>a country</td><td class="num">17</td><td>Sales region + manager email (used for RLS)</td></tr>
+            <tr><td><code>Reviews.csv</code></td><td>a post-trip review</td><td class="num">6,759</td><td>Relates to Bookings, <em>not</em> to Date</td></tr>
+            <tr><td><code>Targets.csv</code></td><td>a month × category</td><td class="num">144</td><td>Different grain from Bookings</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Business rules</h3>
+      <p>These are the rules finance agreed on. Everyone builds with the same definitions, so everyone gets the same numbers.</p>
+      <ul>
+        <li><strong>Net amount</strong> for a booking = <code>(Adults + 0.5 × Children) × UnitPriceUSD × (1 − DiscountPct)</code>. Children pay half price.</li>
+        <li><strong>Net revenue</strong> counts every booking that isn't <em>Cancelled</em>. Revenue is recognised on the <strong>booking date</strong>.</li>
+        <li><strong>Tour cost</strong> = every traveller (adults <em>and</em> children) × the package's <code>CostPerPaxUSD</code>.</li>
+        <li><strong>Commission</strong> = net amount × the agent's <code>CommissionPct</code>. Direct bookings pay 0%.</li>
+        <li><strong>Gross profit</strong> = net revenue − tour cost − commission.</li>
+        <li><strong>NPS</strong> = % promoters (score 9–10) − % detractors (score 0–6), shown as a number from −100 to 100.</li>
+        <li>A blank discount means no discount. A blank AgentID in the 2023 file means <code>AG00</code> (Direct – Website).</li>
+      </ul>
+    </section>
+
+    <!-- ================= M1 ================= -->
+    <section id="m1">
+      <div class="modnum"><span>Module 01</span><span class="time">40 min</span></div>
+      <h2>Get data</h2>
+      <p>Before you load anything, create a <strong>parameter</strong> for the data folder. Later, when the files move to SharePoint or someone else opens your report, you'll only need to change one value.</p>
+      <ol class="steps">
+        <li><span><em>Home → Transform data</em> opens Power Query. Then go to <em>Manage Parameters → New</em>. Name it <code>DataFolder</code>, type <strong>Text</strong>, and set the value to your <code>data</code> path <strong>with a trailing backslash</strong>, e.g. <code>C:\Workshop\twiga-trails\data\</code>.</span></li>
+        <li><span><strong>Bookings:</strong> go to <em>New Source → More → Folder</em>, browse to <code>data\Bookings</code>, then choose <em>Combine &amp; Transform Data</em>. Power BI creates some helper queries; leave them alone. Rename the result to <code>Bookings</code>.</span></li>
+        <li><span><strong>Customers:</strong> go to <em>New Source → Excel workbook</em>, pick <code>Customers.xlsx</code>, and tick the <em>Customers</em> sheet. Don't worry about the ugly first rows yet.</span></li>
+        <li><span><strong>Everything else:</strong> go to <em>New Source → Text/CSV</em> and load <code>Packages</code>, <code>Parks</code>, <code>Agents</code>, <code>Regions</code>, <code>Reviews</code> and <code>Targets</code>.</span></li>
+        <li><span>Open each query's <em>Source</em> step in the Advanced Editor and replace the hard-coded path with <code>DataFolder &amp; "Packages.csv"</code> (and so on).</span></li>
+      </ol>
+      <div class="note why">
+        <span class="tag">Why a folder source?</span>
+        <p>Finance sends a new bookings file every six months. With a folder source, adding a new year means dropping the file into the folder and clicking <em>Refresh</em>. You'll prove this in Module 8.</p>
+      </div>
+      <details class="fac">
+        <summary>Facilitator note — common first-hour problems</summary>
+        <div class="inner">
+          <ul>
+            <li><strong>"DataFormat.Error: couldn't convert to Number" on DiscountPct.</strong> The learner's locale uses a comma as the decimal separator. Fix it with the regional setting above, or with <em>Change Type → Using Locale → English (United States)</em>.</li>
+            <li><strong>The folder combine picked up a stray file</strong> (e.g. <code>~$Bookings.xlsx</code> or a <code>.DS_Store</code> file from Mac zips). The M code in Module 2 filters to <code>.csv</code> only.</li>
+            <li>If someone is badly stuck, get them to paste the full <code>Bookings</code> query from Module 2 into <em>New Source → Blank Query → Advanced Editor</em>.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- ================= M2 ================= -->
+    <section id="m2">
+      <div class="modnum"><span>Module 02</span><span class="time">60 min</span></div>
+      <h2>Clean in Power Query</h2>
+      <p>There are six traps hidden in the data. Try to find each one yourself with <em>View → Column quality</em>, <em>Column distribution</em> and <em>Column profile</em> (set profiling to "based on entire data set" in the status bar) before you read the fix.</p>
+
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Trap</th><th>Where</th><th>Fix in the UI</th></tr></thead>
+          <tbody>
+            <tr><td>1 · Duplicate rows</td><td>Bookings 2024</td><td>Select <code>BookingID</code> → <em>Remove Rows → Remove Duplicates</em></td></tr>
+            <tr><td>2 · Messy status</td><td>Bookings</td><td><em>Format → Trim</em>, <em>Format → Capitalize Each Word</em>, then <em>Replace Values</em> "Canceled" → "Cancelled"</td></tr>
+            <tr><td>3 · Blank discounts</td><td>Bookings</td><td><em>Replace Values</em> <code>null</code> → <code>0</code></td></tr>
+            <tr><td>4 · Blank AgentID</td><td>Bookings 2023</td><td><em>Replace Values</em> <code>null</code> → <code>AG00</code></td></tr>
+            <tr><td>5 · Title rows</td><td>Customers.xlsx</td><td><em>Remove Top Rows</em> (2) → <em>Use First Row as Headers</em></td></tr>
+            <tr><td>6 · 46 country spellings</td><td>Customers.xlsx</td><td><em>Trim</em>, then <em>Replace Values</em> for each variant</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Bookings — full query</h3>
+      <p>Build this step by step in the UI, then open the Advanced Editor and compare. This version also adds three columns you'll need later: <code>Pax</code>, <code>NetAmountUSD</code> and <code>LeadTimeDays</code>.</p>
+      <div class="code"><div class="lang"><b>Power Query M</b><span>Bookings</span></div><pre>let
+    Source   = Folder.Files(DataFolder &amp; "Bookings"),
+    CsvOnly  = Table.SelectRows(Source, each Text.Lower([Extension]) = ".csv"),
+    Parsed   = Table.AddColumn(CsvOnly, "Data", each Table.PromoteHeaders(
+                   Csv.Document([Content], [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+                   [PromoteAllScalars = true])),
+    Kept     = Table.SelectColumns(Parsed, {"Name", "Data"}),
+    Expanded = Table.ExpandTableColumn(Kept, "Data",
+                   {"BookingID", "BookingDate", "TravelStartDate", "CustomerID", "PackageID", "AgentID",
+                    "Adults", "Children", "UnitPriceUSD", "DiscountPct", "Status", "PaymentMethod"}),
+    Renamed  = Table.RenameColumns(Expanded, {{"Name", "SourceFile"}}),
+    Typed    = Table.TransformColumnTypes(Renamed, {
+                   {"BookingDate", type date}, {"TravelStartDate", type date},
+                   {"Adults", Int64.Type}, {"Children", Int64.Type},
+                   {"UnitPriceUSD", type number}, {"DiscountPct", type number}}, "en-US"),
+
+    <span class="c">// Trap 1 — the 2024 file was exported twice for 37 bookings</span>
+    Deduped  = Table.Distinct(Typed, {"BookingID"}),
+
+    <span class="c">// Trap 2 — "completed", "COMPLETED", "Completed ", "Canceled"</span>
+    StatusTidy = Table.TransformColumns(Deduped, {{"Status", each Text.Proper(Text.Trim(_)), type text}}),
+    StatusFix  = Table.ReplaceValue(StatusTidy, "Canceled", "Cancelled", Replacer.ReplaceValue, {"Status"}),
+
+    <span class="c">// Traps 3 &amp; 4 — blanks that mean something</span>
+    DiscountFix = Table.ReplaceValue(StatusFix, null, 0, Replacer.ReplaceValue, {"DiscountPct"}),
+    AgentFix    = Table.TransformColumns(DiscountFix,
+                      {{"AgentID", each if _ = null or _ = "" then "AG00" else _, type text}}),
+
+    <span class="c">// Helper columns for the model</span>
+    AddPax  = Table.AddColumn(AgentFix, "Pax", each [Adults] + [Children], Int64.Type),
+    AddNet  = Table.AddColumn(AddPax, "NetAmountUSD",
+                  each ([Adults] + 0.5 * [Children]) * [UnitPriceUSD] * (1 - [DiscountPct]), type number),
+    AddLead = Table.AddColumn(AddNet, "LeadTimeDays",
+                  each Duration.Days([TravelStartDate] - [BookingDate]), Int64.Type)
+in
+    AddLead</pre></div>
+
+      <h3>Customers — full query</h3>
+      <div class="code"><div class="lang"><b>Power Query M</b><span>Customers</span></div><pre>let
+    Source    = Excel.Workbook(File.Contents(DataFolder &amp; "Customers.xlsx"), null, true),
+    Sheet     = Source{[Item = "Customers", Kind = "Sheet"]}[Data],
+
+    <span class="c">// Trap 5 — a title line and a blank row sit above the real header</span>
+    NoTitle   = Table.Skip(Sheet, 2),
+    Headers   = Table.PromoteHeaders(NoTitle, [PromoteAllScalars = true]),
+    Typed     = Table.TransformColumnTypes(Headers, {
+                    {"CustomerID", type text}, {"FirstName", type text}, {"LastName", type text},
+                    {"Country", type text}, {"Segment", type text}, {"AgeBand", type text},
+                    {"JoinDate", type date}}),
+
+    <span class="c">// Trap 6 — 46 spellings of 17 countries</span>
+    Trimmed   = Table.TransformColumns(Typed, {{"Country", Text.Trim, type text}}),
+    Fixes     = {
+        {"USA", "United States"}, {"U.S.A.", "United States"}, {"usa", "United States"},
+        {"United States of America", "United States"},
+        {"UK", "United Kingdom"}, {"U.K.", "United Kingdom"}, {"Great Britain", "United Kingdom"},
+        {"UAE", "United Arab Emirates"},
+        {"The Netherlands", "Netherlands"}, {"Holland", "Netherlands"},
+        {"germany", "Germany"}, {"Deutschland", "Germany"}
+    },
+    <span class="c">// Apply each {old, new} pair in turn — same as 12 "Replace Values" steps</span>
+    Cleaned   = List.Accumulate(Fixes, Trimmed,
+                    (tbl, pair) =&gt; Table.ReplaceValue(tbl, pair{0}, pair{1}, Replacer.ReplaceValue, {"Country"})),
+    FullName  = Table.AddColumn(Cleaned, "FullName", each [FirstName] &amp; " " &amp; [LastName], type text)
+in
+    FullName</pre></div>
+
+      <h3>Categories — a tiny dimension</h3>
+      <p><code>Targets</code> are set by <em>month × category</em>, but category only appears in <code>Packages</code>, where it isn't unique. Right-click <code>Packages</code> → <em>Reference</em>, keep only <code>Category</code>, <em>Remove Duplicates</em>, and rename the query to <code>Categories</code>. Add a sort column too:</p>
+      <div class="code"><div class="lang"><b>Power Query M</b><span>Custom column on Categories</span></div><pre>= Table.AddColumn(#"Removed Duplicates", "CategoryOrder",
+      each if [Category] = "Budget" then 1 else if [Category] = "Mid-Range" then 2 else 3, Int64.Type)</pre></div>
+
+      <p>Finally, <strong>untick <em>Enable load</em></strong> on the helper queries that Folder combine created, and rename every step so a colleague can read it (<code>Deduped</code>, not <code>Removed Duplicates1</code>). Then click <em>Close &amp; Apply</em>.</p>
+
+      <div class="note check">
+        <span class="tag">Checkpoint — after Close &amp; Apply</span>
+        <div class="checkgrid">
+          <div><span>Bookings rows</span><b>13,890</b></div>
+          <div><span>Customers rows</span><b>6,500</b></div>
+          <div><span>Distinct countries</span><b>17</b></div>
+          <div><span>Status values</span><b>3</b></div>
+          <div><span>Blank AgentID</span><b>0</b></div>
+          <div><span>Categories rows</span><b>3</b></div>
+        </div>
+      </div>
+      <div class="note trap">
+        <span class="tag">Trap inside the trap</span>
+        <p>Use <em>Remove Duplicates</em> on <code>BookingID</code>, not on every column. Here the double-exported rows are exact copies. But in real life a re-export often has a changed status or a trailing space, so a whole-row check lets it through and revenue gets counted twice. Check the row count after every cleaning step.</p>
+      </div>
+    </section>
+
+    <!-- ================= M3 ================= -->
+    <section id="m3">
+      <div class="modnum"><span>Module 03</span><span class="time">60 min</span></div>
+      <h2>Model the star</h2>
+      <p>Open <em>Model view</em>. You want one fact table in the middle (<code>Bookings</code>), with descriptive dimension tables around it. Filters always flow <strong>from the "one" side to the "many" side</strong>, which is from the dimension into the fact.</p>
+
+      <div class="schema" role="img" aria-label="Star schema: Bookings in the centre linked to Date, Customers, Packages, Agents; Regions snowflakes off Customers, Parks and Categories off Packages; Reviews hangs off Bookings; Targets links to Date and Categories.">
+        <div class="tb"><b>Date</b><small>Date · Year · Month · Season</small></div>
+        <div class="tb"><b>Customers</b><small>CustomerID · Country · Segment</small></div>
+        <div class="tb snow"><b>Regions</b><small>Country · SalesRegion · ManagerEmail</small></div>
+        <div class="tb"><b>Agents</b><small>AgentID · Channel · CommissionPct</small></div>
+        <div class="tb fact"><b>Bookings</b><small>fact · 13,890 rows<br>NetAmountUSD · Pax · Status</small></div>
+        <div class="tb"><b>Packages</b><small>PackageID · Category · CostPerPaxUSD</small></div>
+        <div class="tb"><b>Reviews</b><small>BookingID · Rating · NPSScore</small></div>
+        <div class="tb snow"><b>Parks</b><small>ParkID · Lat / Long</small></div>
+        <div class="tb snow"><b>Categories</b><small>Category · CategoryOrder</small></div>
+        <div class="tb"><b>Targets</b><small>MonthStart · Category · TargetRevenueUSD</small></div>
+        <div class="legend"><span>Solid border: joins straight to the fact</span><span>Dashed: snowflake (joins through another dimension)</span></div>
+      </div>
+
+      <h3>Date table</h3>
+      <p>Time intelligence functions need a continuous calendar. Go to <em>Modeling → New table</em> and paste the code below. The <em>Season</em> column follows the East African safari calendar.</p>
+      <div class="code"><div class="lang"><b>DAX</b><span>Calculated table</span></div><pre>Date =
+ADDCOLUMNS (
+    CALENDAR ( DATE ( 2023, 1, 1 ), DATE ( 2026, 12, 31 ) ),
+    "Year",       YEAR ( [Date] ),
+    "Month No",   MONTH ( [Date] ),
+    "Month",      FORMAT ( [Date], "mmm" ),
+    "Quarter",    "Q" &amp; QUARTER ( [Date] ),
+    "Year-Month", FORMAT ( [Date], "yyyy-mm" ),
+    "Season",
+        SWITCH (
+            TRUE (),
+            MONTH ( [Date] ) IN { 7, 8, 9, 10 }, "Migration peak",
+            MONTH ( [Date] ) IN { 12, 1 },       "Festive peak",
+            MONTH ( [Date] ) IN { 4, 5 },        "Long rains",
+            "Shoulder"
+        )
+)</pre></div>
+      <p>Then: <em>Table tools → Mark as date table</em> (column <code>Date</code>), and sort <code>Month</code> by <code>Month No</code>.</p>
+
+      <h3>Relationships</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>From (many)</th><th>To (one)</th><th>Active</th><th>Filter direction</th></tr></thead>
+          <tbody>
+            <tr><td><code>Bookings[BookingDate]</code></td><td><code>Date[Date]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Bookings[TravelStartDate]</code></td><td><code>Date[Date]</code></td><td><strong>No</strong></td><td>Single</td></tr>
+            <tr><td><code>Bookings[CustomerID]</code></td><td><code>Customers[CustomerID]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Bookings[PackageID]</code></td><td><code>Packages[PackageID]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Bookings[AgentID]</code></td><td><code>Agents[AgentID]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Customers[Country]</code></td><td><code>Regions[Country]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Packages[PrimaryParkID]</code></td><td><code>Parks[ParkID]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Packages[Category]</code></td><td><code>Categories[Category]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Reviews[BookingID]</code></td><td><code>Bookings[BookingID]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Targets[MonthStart]</code></td><td><code>Date[Date]</code></td><td>Yes</td><td>Single</td></tr>
+            <tr><td><code>Targets[Category]</code></td><td><code>Categories[Category]</code></td><td>Yes</td><td>Single</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note trap">
+        <span class="tag">Don't relate Reviews[ReviewDate] to Date</span>
+        <p>If you did, <code>Date</code> could reach <code>Reviews</code> by two paths (directly, and through Bookings). Power BI calls this <em>ambiguity</em> and will quietly make one of the links inactive. Here, reviews are analysed by the booking they belong to.</p>
+      </div>
+      <div class="note trap">
+        <span class="tag">A (Blank) region in your slicer?</span>
+        <p>That means a country in <code>Customers</code> has no match in <code>Regions</code>, so trap 6 isn't fully fixed. Build a table of <code>Customers[Country]</code> where <code>Regions[SalesRegion]</code> is blank to find the culprit.</p>
+      </div>
+      <p><strong>Tidy up:</strong> hide every ID and foreign-key column from report view, set <code>Parks[Latitude]</code>/<code>[Longitude]</code> data categories, format <code>CommissionPct</code> and <code>DiscountPct</code> as percentages, and create an empty table called <code>_Measures</code> (<em>Enter data</em>) to keep all your measures in one place.</p>
+    </section>
+
+    <!-- ================= M4 ================= -->
+    <section id="m4">
+      <div class="modnum"><span>Module 04</span><span class="time">65 + 45 min</span></div>
+      <h2>Write the DAX</h2>
+      <p>Build these in order, because later measures reuse earlier ones. After each group, drop the measures into a <strong>card</strong> or a <strong>table by Year</strong> and check them against the checkpoint.</p>
+
+      <h3>Part 1 — Core measures</h3>
+      <div class="code"><div class="lang"><b>DAX</b><span>_Measures</span></div><pre><span class="c">-- Volume</span>
+Bookings            = COUNTROWS ( Bookings )
+Cancelled Bookings  = CALCULATE ( [Bookings], Bookings[Status] = "Cancelled" )
+Cancellation Rate   = DIVIDE ( [Cancelled Bookings], [Bookings] )
+Travellers          = CALCULATE ( SUM ( Bookings[Pax] ), Bookings[Status] &lt;&gt; "Cancelled" )
+
+<span class="c">-- Money</span>
+Net Revenue         = CALCULATE ( SUM ( Bookings[NetAmountUSD] ), Bookings[Status] &lt;&gt; "Cancelled" )
+
+Tour Cost =
+CALCULATE (
+    SUMX ( Bookings, Bookings[Pax] * RELATED ( Packages[CostPerPaxUSD] ) ),
+    Bookings[Status] &lt;&gt; "Cancelled"
+)
+
+Commission =
+CALCULATE (
+    SUMX ( Bookings, Bookings[NetAmountUSD] * RELATED ( Agents[CommissionPct] ) ),
+    Bookings[Status] &lt;&gt; "Cancelled"
+)
+
+Gross Profit        = [Net Revenue] - [Tour Cost] - [Commission]
+Gross Margin %      = DIVIDE ( [Gross Profit], [Net Revenue] )
+Avg Booking Value   = DIVIDE ( [Net Revenue], [Bookings] - [Cancelled Bookings] )
+Avg Lead Time (days)= AVERAGE ( Bookings[LeadTimeDays] )</pre></div>
+      <div class="note why">
+        <span class="tag">Explain it to your neighbour</span>
+        <p>Why does <code>Tour Cost</code> need <code>SUMX</code> and <code>RELATED</code>, when <code>Net Revenue</code> only needs <code>SUM</code>? (Hint: the cost per traveller lives in a different table, and it has to be multiplied row by row <em>before</em> it's added up.)</p>
+      </div>
+      <div class="note check">
+        <span class="tag">Checkpoint — Year slicer = 2025</span>
+        <div class="checkgrid">
+          <div><span>Bookings</span><b>5,434</b></div>
+          <div><span>Cancellation rate</span><b>9.81%</b></div>
+          <div><span>Travellers</span><b>17,133</b></div>
+          <div><span>Net revenue</span><b>$53.36M</b></div>
+          <div><span>Gross profit</span><b>$19.79M</b></div>
+          <div><span>Gross margin</span><b>37.1%</b></div>
+          <div><span>Avg booking value</span><b>$10,887</b></div>
+        </div>
+      </div>
+
+      <h3>Part 2 — Time, targets, travel date, guests</h3>
+      <div class="code"><div class="lang"><b>DAX</b><span>_Measures</span></div><pre><span class="c">-- Time intelligence (needs the marked Date table)</span>
+Revenue LY          = CALCULATE ( [Net Revenue], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+Revenue YoY %       = DIVIDE ( [Net Revenue] - [Revenue LY], [Revenue LY] )
+Revenue YTD         = TOTALYTD ( [Net Revenue], 'Date'[Date] )
+Revenue Rolling 3M  =
+    CALCULATE ( [Net Revenue], DATESINPERIOD ( 'Date'[Date], MAX ( 'Date'[Date] ), -3, MONTH ) )
+
+<span class="c">-- Switch on the inactive relationship: when do guests actually travel?</span>
+Revenue by Travel Date =
+    CALCULATE ( [Net Revenue], USERELATIONSHIP ( Bookings[TravelStartDate], 'Date'[Date] ) )
+
+<span class="c">-- Targets (month x category grain)</span>
+Revenue Target      = SUM ( Targets[TargetRevenueUSD] )
+Target Variance %   = DIVIDE ( [Net Revenue] - [Revenue Target], [Revenue Target] )
+
+<span class="c">-- Guest experience</span>
+Avg Rating          = AVERAGE ( Reviews[Rating] )
+NPS =
+VAR Responses  = COUNTROWS ( Reviews )
+VAR Promoters  = CALCULATE ( COUNTROWS ( Reviews ), Reviews[NPSScore] &gt;= 9 )
+VAR Detractors = CALCULATE ( COUNTROWS ( Reviews ), Reviews[NPSScore] &lt;= 6 )
+RETURN
+    DIVIDE ( Promoters - Detractors, Responses ) * 100
+
+<span class="c">-- Ranking</span>
+Package Rank        = RANKX ( ALL ( Packages[PackageName] ), [Net Revenue] )</pre></div>
+      <div class="note check">
+        <span class="tag">Checkpoint — Year slicer = 2025</span>
+        <div class="checkgrid">
+          <div><span>Revenue LY</span><b>$39.69M</b></div>
+          <div><span>Revenue YoY</span><b>+34.4%</b></div>
+          <div><span>Revenue target</span><b>$53.66M</b></div>
+          <div><span>Target variance</span><b>−0.6%</b></div>
+          <div><span>Rolling 3M (Dec)</span><b>$14.07M</b></div>
+          <div><span>Avg rating</span><b>4.12</b></div>
+          <div><span>NPS</span><b>35.4</b></div>
+        </div>
+      </div>
+      <div class="note trap">
+        <span class="tag">Targets at day level look wrong</span>
+        <p>Targets are stored on the first day of each month. On a daily axis, the whole month's target shows up on the 1st. Only show target measures at month level or above. If you want to go further, return <code>BLANK()</code> when <code>ISINSCOPE('Date'[Date])</code>.</p>
+      </div>
+    </section>
+
+    <!-- ================= M5 ================= -->
+    <section id="m5">
+      <div class="modnum"><span>Module 05</span><span class="time">45 min</span></div>
+      <h2>Build the report</h2>
+      <p>Import the theme first (<em>View → Themes → Browse for themes</em>) so every visual starts with the same colours. Save the JSON below as <code>twiga-theme.json</code>.</p>
+      <div class="code"><div class="lang"><b>JSON</b><span>twiga-theme.json</span></div><pre>{
+  "name": "Twiga Trails",
+  "dataColors": ["#2D5B44", "#C08A2E", "#7A9E7E", "#8C4A2F", "#4F6D8A", "#B9A06A"],
+  "background": "#FFFFFF",
+  "foreground": "#18211C",
+  "tableAccent": "#2D5B44"
+}</pre></div>
+
+      <div class="pages">
+        <div class="pg">
+          <h4>1 · Executive overview</h4>
+          <p>Question: are we growing, and are we on target?</p>
+          <ul>
+            <li>KPI cards: Net Revenue, Gross Profit, Margin %, YoY %, Cancellation Rate, NPS</li>
+            <li>Line + column: Net Revenue vs Revenue Target by Year-Month</li>
+            <li>Bar: Net Revenue by Category (sorted by CategoryOrder)</li>
+            <li>Slicers: Year, SalesRegion, Channel</li>
+          </ul>
+        </div>
+        <div class="pg">
+          <h4>2 · Seasonality &amp; demand</h4>
+          <p>Question: when do guests book, and when do they travel?</p>
+          <ul>
+            <li>Line: Net Revenue <em>and</em> Revenue by Travel Date by Month</li>
+            <li>Matrix: Season × Category, with Travellers and Revenue by Travel Date</li>
+            <li>Column: Avg Lead Time by Category</li>
+          </ul>
+        </div>
+        <div class="pg">
+          <h4>3 · Channels &amp; customers</h4>
+          <p>Question: who sells for us, and who cancels?</p>
+          <ul>
+            <li>Bar: Cancellation Rate by Channel, with a data-bar conditional format</li>
+            <li>Table: Agents with Revenue, Commission, Gross Margin %</li>
+            <li>Bars: Revenue by SalesRegion and by Segment (bars, not donuts)</li>
+          </ul>
+        </div>
+        <div class="pg">
+          <h4>4 · Packages &amp; parks</h4>
+          <p>Question: what are we really selling?</p>
+          <ul>
+            <li>Map: Parks by Lat/Long, bubble size = Travellers</li>
+            <li>Table: PackageName, Package Rank, Revenue, Margin %, Avg Rating</li>
+            <li>Line: PK18 monthly revenue since launch (Jul 2024)</li>
+          </ul>
+        </div>
+        <div class="pg">
+          <h4>5 · Guest experience</h4>
+          <p>Question: where do we disappoint guests?</p>
+          <ul>
+            <li>Cards: Avg Rating, NPS, review count</li>
+            <li>Column: Avg Rating by travel Month (note the dip)</li>
+            <li>Table: ReviewText filtered to Rating ≤ 2</li>
+          </ul>
+        </div>
+        <div class="pg">
+          <h4>Tooltip · Package snapshot</h4>
+          <p>Small page (<em>Page information → Allow use as tooltip</em>, canvas type Tooltip).</p>
+          <ul>
+            <li>Card: Net Revenue, Avg Rating</li>
+            <li>Mini column: Travellers by Season</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note trap">
+        <span class="tag">The map is blank?</span>
+        <p>Map and Filled map visuals need <em>File → Options → Security → Use Map and Filled Map visuals</em> turned on. In Service, an admin may also need to allow them. The Azure Maps visual is the modern alternative.</p>
+      </div>
+      <details class="fac">
+        <summary>Facilitator note — design critique prompts</summary>
+        <div class="inner">
+          <ul>
+            <li>"If the CEO only looked at this page for 5 seconds, what would they remember?"</li>
+            <li>"Why is the Revenue by Travel Date line so much spikier than the booking line?" Answer: guests book months ahead, but they travel in migration season.</li>
+            <li>Ban pie and donut charts with more than 3 slices, and ban 3D visuals. Ask learners to justify every colour they use.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- ================= M6 ================= -->
+    <section id="m6">
+      <div class="modnum"><span>Module 06</span><span class="time">30 min</span></div>
+      <h2>Interactivity</h2>
+      <ol class="steps">
+        <li><span><strong>Sync slicers.</strong> Go to <em>View → Sync slicers</em> and make the Year and SalesRegion slicers apply to pages 1–4.</span></li>
+        <li><span><strong>Drill-through.</strong> Duplicate page 4 as <em>Package detail</em>, hide it, and drag <code>Packages[PackageName]</code> into <em>Drill through</em>. Right-clicking any package now opens its detail page. Add a back button.</span></li>
+        <li><span><strong>Report tooltip.</strong> On the Package table in page 4, go to <em>Format → Tooltips → Type: Report page → Package snapshot</em>.</span></li>
+        <li><span><strong>Bookmarks.</strong> On page 3, put a chart and a table in the same spot. Create two bookmarks ("Chart view" and "Table view") that toggle their visibility in the <em>Selection pane</em>, then add two buttons.</span></li>
+        <li><span><strong>Field parameter.</strong> Go to <em>Modeling → New parameter → Fields</em> and add Net Revenue, Gross Profit and Travellers. Use it as the Y-axis of the page 1 line chart, with a slicer, so the CEO can choose the metric.</span></li>
+      </ol>
+    </section>
+
+    <!-- ================= M7 ================= -->
+    <section id="m7">
+      <div class="modnum"><span>Module 07</span><span class="time">20 min</span></div>
+      <h2>Row-level security</h2>
+      <p>Each regional sales manager should only see <em>their</em> region's guests and bookings. The filter goes on <code>Regions</code>, then flows to Customers, then to Bookings, then to Reviews.</p>
+      <h3>Static role (quick test)</h3>
+      <p><em>Modeling → Manage roles → New</em> → name it <code>Europe</code> → table <code>Regions</code>:</p>
+      <div class="code"><div class="lang"><b>DAX</b><span>Role filter on Regions</span></div><pre>[SalesRegion] = "Europe"</pre></div>
+      <h3>Dynamic role (the real thing)</h3>
+      <p>Create one role called <code>Regional Manager</code> that works for every manager:</p>
+      <div class="code"><div class="lang"><b>DAX</b><span>Role filter on Regions</span></div><pre>[ManagerEmail] = USERPRINCIPALNAME ()</pre></div>
+      <p>Test it with <em>Modeling → View as</em>: tick <em>Other user</em>, enter <code>daniel.otieno@twigatrails.example</code>, and tick the role.</p>
+      <div class="note check">
+        <span class="tag">Checkpoint — Year = 2025, viewing as each role</span>
+        <div class="checkgrid">
+          <div><span>Europe</span><b>$20.32M</b></div>
+          <div><span>Americas</span><b>$16.86M</b></div>
+          <div><span>Asia-Pacific</span><b>$8.68M</b></div>
+          <div><span>Middle East &amp; Africa</span><b>$7.49M</b></div>
+        </div>
+      </div>
+      <div class="note trap">
+        <span class="tag">Discussion: what does a Europe manager see on the target chart?</span>
+        <p>Targets are set by category, not by region, so RLS doesn't filter them. A Europe manager ends up comparing Europe revenue against the <em>whole company's</em> target. Decide as a team: hide the target for managers, or ask finance for regional targets?</p>
+      </div>
+    </section>
+
+    <!-- ================= M8 ================= -->
+    <section id="m8">
+      <div class="modnum"><span>Module 08</span><span class="time">25 min</span></div>
+      <h2>Publish &amp; refresh</h2>
+      <ol class="steps">
+        <li><span><strong>Publish.</strong> Go to <em>Home → Publish</em> and choose the cohort workspace your facilitator created. Name your file <code>TwigaTrails_&lt;YourName&gt;.pbix</code>.</span></li>
+        <li><span><strong>Assign RLS.</strong> In Service, open the <em>semantic model → … → Security</em> and add a classmate's email to <code>Regional Manager</code>. Your facilitator has swapped their email into <code>Regions.csv</code> for this step.</span></li>
+        <li><span><strong>Make refresh possible.</strong> A report built on files from your laptop can't refresh from the cloud on its own. You have two options: (a) install the <em>on-premises data gateway (personal mode)</em>, or (b) better: move the <code>data</code> folder to SharePoint/OneDrive for work, switch the Bookings source to <em>SharePoint folder</em>, and update <code>DataFolder</code>.</span></li>
+        <li><span><strong>Schedule it.</strong> In the semantic model settings, sign in to the data source credentials and set a daily refresh at 06:00 (UTC+3).</span></li>
+        <li><span><strong>The new file arrives.</strong> Move <code>_later/Bookings_2026_H1.csv</code> into the <code>Bookings</code> folder and click <em>Refresh now</em>. You shouldn't need to change a single query.</span></li>
+        <li><span><strong>Dashboard &amp; alert.</strong> Pin the Net Revenue card and the revenue line to a new dashboard. Then set a data alert on the Cancellation Rate card for when it goes above 12%.</span></li>
+      </ol>
+      <div class="note check">
+        <span class="tag">Checkpoint — after the 2026 file is refreshed in</span>
+        <div class="checkgrid">
+          <div><span>Bookings (all years)</span><b>16,598</b></div>
+          <div><span>H1 2026 net revenue</span><b>$31.28M</b></div>
+          <div><span>H1 2026 gross margin</span><b>39.4%</b></div>
+          <div><span>H1 2026 cancellations</span><b>8.42%</b></div>
+        </div>
+      </div>
+      <details class="fac">
+        <summary>Facilitator note — before the day</summary>
+        <div class="inner">
+          <ul>
+            <li>Create the cohort workspace and add learners as <em>Contributors</em>. Check which licences learners have, since sharing and apps need Pro, PPU, or a workspace on capacity.</li>
+            <li>Replace the four <code>ManagerEmail</code> values in <code>Regions.csv</code> with volunteer learners' real work/school emails, so the dynamic RLS demo works live.</li>
+            <li>If the gateway or SharePoint isn't possible on the day, demo step 5 in Desktop instead. The folder-refresh lesson still works.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- ================= M9 ================= -->
+    <section id="m9">
+      <div class="modnum"><span>Module 09</span><span class="time">45 min</span></div>
+      <h2>Present insights</h2>
+      <p>In teams of 2–3, choose <strong>three</strong> findings. For each one, show the visual, say what it means for the business, and recommend an action. You have 5 minutes, and no slides: present straight from your report.</p>
+      <h3>Investigation prompts</h3>
+      <ul>
+        <li><strong>The OTA problem.</strong> OTA bookings are cancelled about twice as often as direct ones, <em>and</em> they carry the highest commission. What is an OTA booking really worth?</li>
+        <li><strong>Book in May, fly in August.</strong> Compare booking-date and travel-date revenue by month. What does this mean for cash flow and marketing timing?</li>
+        <li><strong>The August dip.</strong> Average rating falls for trips in August. Is it the crowds at Mara river crossings? Which packages suffer most?</li>
+        <li><strong>A new star.</strong> The Samburu &amp; Laikipia Private Conservancy package launched in July 2024. How fast did it climb the rankings, and did it take sales away from other packages?</li>
+        <li><strong>Budget safaris.</strong> They're popular with travellers, but what share of gross profit do they bring in? Should Twiga keep them?</li>
+        <li><strong>2026 outlook.</strong> Using H1 2026 against the 2026 targets, will the company hit its annual number?</li>
+      </ul>
+    </section>
+
+    <!-- ================= RUBRIC ================= -->
+    <section id="rubric">
+      <div class="modnum"><span>For assessment</span></div>
+      <h2>Assessment rubric</h2>
+      <div class="tbl">
+        <table class="rubric">
+          <thead><tr><th>Area</th><th>Points</th><th>What "excellent" looks like</th></tr></thead>
+          <tbody>
+            <tr><td>Data preparation</td><td>20</td><td>All 6 traps fixed; steps named; parameterised source; checkpoint counts match</td></tr>
+            <tr><td>Data model</td><td>20</td><td>Clean star, correct cardinality and direction, marked date table, keys hidden, no ambiguity</td></tr>
+            <tr><td>DAX</td><td>20</td><td>All measures correct against the answer key; uses variables and DIVIDE; formatted</td></tr>
+            <tr><td>Report design</td><td>15</td><td>Each page answers one question; consistent theme; no chart junk; readable at a glance</td></tr>
+            <tr><td>Interactivity &amp; security</td><td>10</td><td>Drill-through, tooltip, bookmarks work; dynamic RLS tested with "View as"</td></tr>
+            <tr><td>Service</td><td>5</td><td>Published, refresh configured, 2026 file refreshed in, alert set</td></tr>
+            <tr><td>Insight presentation</td><td>10</td><td>Three findings, each with evidence, a "so what", and a concrete recommendation</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ================= ANSWER KEY ================= -->
+    <section id="key">
+      <div class="modnum"><span>For checking</span></div>
+      <h2>Answer key</h2>
+      <p>These figures were calculated from the cleaned data using the business rules above. Revenue is by <strong>booking year</strong> unless stated otherwise. Tiny differences in the last cent come from rounding, not mistakes.</p>
+
+      <h3>By booking year</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Measure</th><th class="num">2023</th><th class="num">2024</th><th class="num">2025</th><th class="num">2023–25</th></tr></thead>
+          <tbody>
+            <tr><td>Bookings</td><td class="num">3,867</td><td class="num">4,589</td><td class="num">5,434</td><td class="num">13,890</td></tr>
+            <tr><td>Cancelled</td><td class="num">360</td><td class="num">419</td><td class="num">533</td><td class="num">1,312</td></tr>
+            <tr><td>Cancellation rate</td><td class="num">9.31%</td><td class="num">9.13%</td><td class="num">9.81%</td><td class="num">9.45%</td></tr>
+            <tr><td>Travellers</td><td class="num">12,333</td><td class="num">14,473</td><td class="num">17,133</td><td class="num">43,939</td></tr>
+            <tr><td>Net revenue</td><td class="num">$29,800,966.00</td><td class="num">$39,694,230.62</td><td class="num">$53,358,318.50</td><td class="num">$122,853,515.12</td></tr>
+            <tr><td>Tour cost</td><td class="num">$18,261,115</td><td class="num">$22,919,020</td><td class="num">$29,479,865</td><td class="num">$70,660,000</td></tr>
+            <tr><td>Commission</td><td class="num">$2,453,365.33</td><td class="num">$3,189,007.98</td><td class="num">$4,083,572.82</td><td class="num">$9,725,946.12</td></tr>
+            <tr><td>Gross profit</td><td class="num">$9,086,485.67</td><td class="num">$13,586,202.65</td><td class="num">$19,794,880.68</td><td class="num">$42,467,569.00</td></tr>
+            <tr><td>Gross margin</td><td class="num">30.5%</td><td class="num">34.2%</td><td class="num">37.1%</td><td class="num">34.6%</td></tr>
+            <tr><td>Avg booking value</td><td class="num">$8,497.57</td><td class="num">$9,519.00</td><td class="num">$10,887.23</td><td class="num">$9,767.33</td></tr>
+            <tr><td>Revenue YoY</td><td class="num">—</td><td class="num">+33.2%</td><td class="num">+34.4%</td><td class="num">—</td></tr>
+            <tr><td>Reviews</td><td class="num">1,952</td><td class="num">2,204</td><td class="num">2,603</td><td class="num">6,759</td></tr>
+            <tr><td>Avg rating</td><td class="num">4.11</td><td class="num">4.15</td><td class="num">4.12</td><td class="num">—</td></tr>
+            <tr><td>NPS</td><td class="num">32.7</td><td class="num">36.5</td><td class="num">35.4</td><td class="num">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>2025 breakdowns (net revenue)</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Dimension</th><th>Value</th><th class="num">Net revenue</th></tr></thead>
+          <tbody>
+            <tr><td rowspan="3">Category</td><td>Luxury</td><td class="num">$39,800,394.12</td></tr>
+            <tr><td>Mid-Range</td><td class="num">$10,953,691.12</td></tr>
+            <tr><td>Budget</td><td class="num">$2,604,233.25</td></tr>
+            <tr><td rowspan="4">Channel</td><td>Direct</td><td class="num">$20,243,449.38</td></tr>
+            <tr><td>OTA</td><td class="num">$13,139,612.12</td></tr>
+            <tr><td>Tour Operator</td><td class="num">$13,087,757.00</td></tr>
+            <tr><td>Corporate</td><td class="num">$6,887,500.00</td></tr>
+            <tr><td rowspan="4">Sales region</td><td>Europe</td><td class="num">$20,322,307.62</td></tr>
+            <tr><td>Americas</td><td class="num">$16,864,260.88</td></tr>
+            <tr><td>Asia-Pacific</td><td class="num">$8,683,855.00</td></tr>
+            <tr><td>Middle East &amp; Africa</td><td class="num">$7,487,895.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Top 5 packages, 2025</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th class="num">Rank</th><th>Package</th><th class="num">Net revenue</th></tr></thead>
+          <tbody>
+            <tr><td class="num">1</td><td>Mara Great Migration Luxury Camp</td><td class="num">$7,271,086.25</td></tr>
+            <tr><td class="num">2</td><td>Samburu &amp; Laikipia Private Conservancy</td><td class="num">$7,213,135.50</td></tr>
+            <tr><td class="num">3</td><td>Serengeti Migration Fly-In</td><td class="num">$7,174,494.00</td></tr>
+            <tr><td class="num">4</td><td>Ultimate East Africa Honeymoon</td><td class="num">$5,561,033.38</td></tr>
+            <tr><td class="num">5</td><td>Rwanda Gorillas &amp; Golden Monkeys</td><td class="num">$4,520,608.50</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>2025 by month — booked vs travelled</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Month</th><th class="num">By booking date</th><th class="num">By travel date</th><th>Season</th></tr></thead>
+          <tbody>
+            <tr><td>Jan</td><td class="num">$3,098,201.75</td><td class="num">$4,892,565.00</td><td>Festive peak</td></tr>
+            <tr><td>Feb</td><td class="num">$2,964,141.50</td><td class="num">$3,217,455.75</td><td>Shoulder</td></tr>
+            <tr><td>Mar</td><td class="num">$3,749,574.75</td><td class="num">$2,754,826.38</td><td>Shoulder</td></tr>
+            <tr><td>Apr</td><td class="num">$4,483,392.00</td><td class="num">$1,260,211.12</td><td>Long rains</td></tr>
+            <tr><td>May</td><td class="num">$5,544,682.00</td><td class="num">$1,270,893.50</td><td>Long rains</td></tr>
+            <tr><td>Jun</td><td class="num">$5,568,708.50</td><td class="num">$3,136,538.88</td><td>Shoulder</td></tr>
+            <tr><td>Jul</td><td class="num">$4,844,260.38</td><td class="num">$6,141,106.38</td><td>Migration peak</td></tr>
+            <tr><td>Aug</td><td class="num">$4,834,995.88</td><td class="num">$7,369,506.75</td><td>Migration peak</td></tr>
+            <tr><td>Sep</td><td class="num">$4,200,836.50</td><td class="num">$6,345,365.50</td><td>Migration peak</td></tr>
+            <tr><td>Oct</td><td class="num">$5,107,992.75</td><td class="num">$5,186,450.88</td><td>Migration peak</td></tr>
+            <tr><td>Nov</td><td class="num">$4,497,869.75</td><td class="num">$2,409,125.75</td><td>Shoulder</td></tr>
+            <tr><td>Dec</td><td class="num">$4,463,662.75</td><td class="num">$6,028,176.12</td><td>Festive peak</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Cancellation rate by channel, 2023–25: <strong>OTA 14.88%</strong>, Tour Operator 7.41%, Direct 7.18%, Corporate 6.91%. The 2025 revenue target is <strong>$53,663,000</strong>.</p>
+      <p>The full key, including H1 2026, is in <code>answer_key.json</code> in the kit. To rebuild the dataset from scratch, run <code>python3 generate_data.py</code>. It uses a fixed seed, so you get the same files every time.</p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Prepared for the LuxDevHQ Data Analytics cohort · Workshop led by Caleb Kilemba · Twiga Trails Safaris, its staff, agents and guests are fictional, and all data is synthetic.
+</footer>

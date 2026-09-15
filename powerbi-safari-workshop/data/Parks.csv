@@ -1,0 +1,11 @@
+ParkID,ParkName,Country,Latitude,Longitude,Ecosystem,ParkFeeUSDPerDay
+P01,Maasai Mara National Reserve,Kenya,-1.4061,35.01,Savanna,100
+P02,Amboseli National Park,Kenya,-2.6527,37.2606,Swamp & Savanna,70
+P03,Tsavo East National Park,Kenya,-2.7667,38.75,Semi-arid Bush,52
+P04,Samburu National Reserve,Kenya,0.62,37.53,Arid Riverine,70
+P05,Lake Nakuru National Park,Kenya,-0.3667,36.0833,Rift Valley Lake,60
+P06,Serengeti National Park,Tanzania,-2.3333,34.8333,Savanna,83
+P07,Ngorongoro Conservation Area,Tanzania,-3.2,35.5,Volcanic Crater,71
+P08,Tarangire National Park,Tanzania,-4.1667,36.1,Baobab Woodland,59
+P09,Bwindi Impenetrable National Park,Uganda,-1.05,29.7,Montane Rainforest,40
+P10,Volcanoes National Park,Rwanda,-1.4833,29.5333,Montane Bamboo,100

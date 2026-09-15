@@ -1,0 +1,19 @@
+PackageID,PackageName,Category,DurationDays,PrimaryParkID,BasePriceUSD,CostPerPaxUSD,LaunchDate
+PK01,Mara Express Camping,Budget,3,P01,420,250,2019-01-01
+PK02,Nakuru & Naivasha Budget Trail,Budget,3,P05,380,225,2019-01-01
+PK03,Amboseli Kilimanjaro Views Camping,Budget,4,P02,540,320,2020-03-01
+PK04,Tsavo Red Elephants Road Trip,Budget,4,P03,500,300,2021-06-01
+PK05,Northern Tanzania Group Camping,Budget,5,P08,780,480,2020-01-01
+PK06,Classic Maasai Mara Lodge Safari,Mid-Range,4,P01,1250,740,2018-01-01
+PK07,Kenya Big Five Circuit,Mid-Range,7,P02,2350,1400,2018-01-01
+PK08,Samburu Special Five,Mid-Range,4,P04,1180,700,2019-05-01
+PK09,Serengeti & Ngorongoro Explorer,Mid-Range,6,P06,2600,1590,2018-01-01
+PK10,Tarangire Elephant Trails,Mid-Range,3,P08,890,540,2020-07-01
+PK11,Kenya–Tanzania Cross-Border,Mid-Range,10,P06,3900,2400,2021-01-01
+PK12,Mara Great Migration Luxury Camp,Luxury,5,P01,4800,2750,2018-01-01
+PK13,Serengeti Migration Fly-In,Luxury,6,P06,6200,3600,2019-01-01
+PK14,Ngorongoro Crater Lodge Escape,Luxury,4,P07,4100,2400,2020-01-01
+PK15,Bwindi Gorilla Trek Premium,Luxury,4,P09,3900,2500,2019-01-01
+PK16,Rwanda Gorillas & Golden Monkeys,Luxury,3,P10,4600,3100,2021-09-01
+PK17,Ultimate East Africa Honeymoon,Luxury,12,P06,9800,5900,2022-02-14
+PK18,Samburu & Laikipia Private Conservancy,Luxury,5,P04,5200,3000,2024-07-01

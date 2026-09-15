@@ -1,0 +1,15 @@
+AgentID,AgentName,Channel,BaseCountry,CommissionPct
+AG00,Direct – Website,Direct,Kenya,0.0
+AG01,Direct – Nairobi Office,Direct,Kenya,0.0
+AG02,WildPass Online,OTA,Netherlands,0.15
+AG03,BushTrip.travel,OTA,United States,0.17
+AG04,TrekHub Travel,OTA,United Kingdom,0.14
+AG05,Acacia Tours GmbH,Tour Operator,Germany,0.12
+AG06,Kilima Journeys Ltd,Tour Operator,United Kingdom,0.12
+AG07,Horizon Adventure Co.,Tour Operator,United States,0.13
+AG08,Southern Cross Expeditions,Tour Operator,Australia,0.12
+AG09,Lotus Voyages,Tour Operator,China,0.11
+AG10,Desert Rose Travel,Tour Operator,United Arab Emirates,0.11
+AG11,Maple Leaf Wanderers,Tour Operator,Canada,0.12
+AG12,BlueOak Corporate Travel,Corporate,United States,0.08
+AG13,Savanna MICE Solutions,Corporate,Kenya,0.07
