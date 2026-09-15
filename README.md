@@ -19,6 +19,7 @@ A collection of beginner-friendly datasets and guided analytics projects for lea
 | [SokoPay Kenya](projects/sokopay/) | Advanced | CSV, 15,070 transactions | data cleaning, retention, sessionization, statistics, modelling |
 | [Kenya agentic payments](projects/kenya-agentic-payments/) | Intermediate–advanced | CSV, 8,002 payment requests | payment analytics, risk controls, latency, wallet analysis |
 | [Hospital operations](projects/hospital-operations/) | Beginner–intermediate | Excel workbook with related sheets | PostgreSQL import, joins, operational KPIs, Power BI |
+| [Twiga Trails Safaris](powerbi-safari-workshop/) | Beginner–intermediate | CSV and Excel, 13,927 raw booking rows | Power Query, star schema, DAX, RLS, Power BI Service refresh |
 
 ### Recommended learning order
 
@@ -75,6 +76,7 @@ For SQL setup examples, table definitions, import guidance, and 30 practice ques
 │   ├── csv/                        # standalone CSV datasets
 │   ├── excel/                      # standalone Excel workbooks
 │   └── json/                       # standalone JSON datasets
+├── powerbi-safari-workshop/        # end-to-end Power BI safari project
 └── projects/
     ├── hospital-operations/        # brief and workbook
     ├── kenya-retail-sales/         # nested-JSON retail project brief
